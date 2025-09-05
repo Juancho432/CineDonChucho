@@ -30,11 +30,13 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage_registrar = new System.Windows.Forms.TabPage();
+            this.txt_precioBoleta = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.button_limpiar = new System.Windows.Forms.Button();
             this.button_guardar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.datepicker_fecha = new System.Windows.Forms.DateTimePicker();
-            this.timpicker_horaFuncion = new System.Windows.Forms.DateTimePicker();
+            this.timepicker_horaFuncion = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.cb_genero = new System.Windows.Forms.ComboBox();
             this.txt_duracion = new System.Windows.Forms.TextBox();
@@ -46,16 +48,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage_buscar = new System.Windows.Forms.TabPage();
-            this.txt_busqueda = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tabPage_listar = new System.Windows.Forms.TabPage();
-            this.checkBox_editar = new System.Windows.Forms.CheckBox();
-            this.button_guardar_edicion = new System.Windows.Forms.Button();
-            this.txt_codigoListar = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.dgv_listado = new System.Windows.Forms.DataGridView();
-            this.label11 = new System.Windows.Forms.Label();
+            this.txt_precioBoleta_buscado = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.timepicker_fecha_buscado = new System.Windows.Forms.DateTimePicker();
             this.timepicker_hora_buscado = new System.Windows.Forms.DateTimePicker();
@@ -65,11 +59,15 @@
             this.txt_nombre_buscado = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.tabPage_ventas = new System.Windows.Forms.TabPage();
-            this.txt_precioBoleta = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txt_precioBoleta_buscado = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
+            this.button_guardar_edicion = new System.Windows.Forms.Button();
+            this.checkBox_editar = new System.Windows.Forms.CheckBox();
+            this.txt_busqueda = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tabPage_listar = new System.Windows.Forms.TabPage();
+            this.txt_codigoListar = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dgv_listado = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,30 +75,32 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label18 = new System.Windows.Forms.Label();
-            this.cb_pelicula_opciones = new System.Windows.Forms.ComboBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.cb_dia_funcion = new System.Windows.Forms.ComboBox();
-            this.cb_hora_funcion = new System.Windows.Forms.ComboBox();
-            this.cb_N_boletas = new System.Windows.Forms.NumericUpDown();
-            this.label23 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tabPage_ventas = new System.Windows.Forms.TabPage();
+            this.button_confirmar_funcion = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label25 = new System.Windows.Forms.Label();
+            this.lbl_precio_total = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.lbl_precio_unitario = new System.Windows.Forms.Label();
-            this.lbl_precio_total = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button_confirmar_funcion = new System.Windows.Forms.Button();
+            this.label23 = new System.Windows.Forms.Label();
+            this.cb_N_boletas = new System.Windows.Forms.NumericUpDown();
+            this.cb_hora_funcion = new System.Windows.Forms.ComboBox();
+            this.cb_dia_funcion = new System.Windows.Forms.ComboBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.cb_pelicula_opciones = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage_registrar.SuspendLayout();
             this.tabPage_buscar.SuspendLayout();
             this.tabPage_listar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listado)).BeginInit();
             this.tabPage_ventas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cb_N_boletas)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cb_N_boletas)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -124,7 +124,7 @@
             this.tabPage_registrar.Controls.Add(this.button_guardar);
             this.tabPage_registrar.Controls.Add(this.label7);
             this.tabPage_registrar.Controls.Add(this.datepicker_fecha);
-            this.tabPage_registrar.Controls.Add(this.timpicker_horaFuncion);
+            this.tabPage_registrar.Controls.Add(this.timepicker_horaFuncion);
             this.tabPage_registrar.Controls.Add(this.label6);
             this.tabPage_registrar.Controls.Add(this.cb_genero);
             this.tabPage_registrar.Controls.Add(this.txt_duracion);
@@ -143,6 +143,25 @@
             this.tabPage_registrar.Text = "Registrar";
             this.tabPage_registrar.UseVisualStyleBackColor = true;
             // 
+            // txt_precioBoleta
+            // 
+            this.txt_precioBoleta.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_precioBoleta.Location = new System.Drawing.Point(379, 425);
+            this.txt_precioBoleta.Multiline = true;
+            this.txt_precioBoleta.Name = "txt_precioBoleta";
+            this.txt_precioBoleta.Size = new System.Drawing.Size(249, 32);
+            this.txt_precioBoleta.TabIndex = 16;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(191, 433);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(133, 24);
+            this.label16.TabIndex = 15;
+            this.label16.Text = "Precio boleta:";
+            // 
             // button_limpiar
             // 
             this.button_limpiar.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -152,6 +171,7 @@
             this.button_limpiar.TabIndex = 14;
             this.button_limpiar.Text = "Limpiar campos";
             this.button_limpiar.UseVisualStyleBackColor = true;
+            this.button_limpiar.Click += new System.EventHandler(this.Button_limpiar_Click);
             // 
             // button_guardar
             // 
@@ -162,6 +182,7 @@
             this.button_guardar.TabIndex = 13;
             this.button_guardar.Text = "Guardar";
             this.button_guardar.UseVisualStyleBackColor = true;
+            this.button_guardar.Click += new System.EventHandler(this.Button_guardar_Click);
             // 
             // label7
             // 
@@ -181,15 +202,15 @@
             this.datepicker_fecha.Size = new System.Drawing.Size(308, 29);
             this.datepicker_fecha.TabIndex = 11;
             // 
-            // timpicker_horaFuncion
+            // timepicker_horaFuncion
             // 
-            this.timpicker_horaFuncion.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timpicker_horaFuncion.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.timpicker_horaFuncion.Location = new System.Drawing.Point(565, 548);
-            this.timpicker_horaFuncion.Name = "timpicker_horaFuncion";
-            this.timpicker_horaFuncion.ShowUpDown = true;
-            this.timpicker_horaFuncion.Size = new System.Drawing.Size(143, 29);
-            this.timpicker_horaFuncion.TabIndex = 10;
+            this.timepicker_horaFuncion.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timepicker_horaFuncion.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.timepicker_horaFuncion.Location = new System.Drawing.Point(565, 548);
+            this.timepicker_horaFuncion.Name = "timepicker_horaFuncion";
+            this.timepicker_horaFuncion.ShowUpDown = true;
+            this.timepicker_horaFuncion.Size = new System.Drawing.Size(143, 29);
+            this.timepicker_horaFuncion.TabIndex = 10;
             // 
             // label6
             // 
@@ -322,124 +343,25 @@
             this.tabPage_buscar.Text = "Buscar";
             this.tabPage_buscar.UseVisualStyleBackColor = true;
             // 
-            // txt_busqueda
+            // txt_precioBoleta_buscado
             // 
-            this.txt_busqueda.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_busqueda.Location = new System.Drawing.Point(469, 124);
-            this.txt_busqueda.Multiline = true;
-            this.txt_busqueda.Name = "txt_busqueda";
-            this.txt_busqueda.Size = new System.Drawing.Size(288, 32);
-            this.txt_busqueda.TabIndex = 6;
+            this.txt_precioBoleta_buscado.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_precioBoleta_buscado.Location = new System.Drawing.Point(423, 414);
+            this.txt_precioBoleta_buscado.Multiline = true;
+            this.txt_precioBoleta_buscado.Name = "txt_precioBoleta_buscado";
+            this.txt_precioBoleta_buscado.ReadOnly = true;
+            this.txt_precioBoleta_buscado.Size = new System.Drawing.Size(249, 32);
+            this.txt_precioBoleta_buscado.TabIndex = 26;
             // 
-            // label9
+            // label17
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(149, 132);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(294, 24);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Ingrese el código de la película:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label8.Location = new System.Drawing.Point(341, 52);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(242, 40);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Buscar película ";
-            // 
-            // tabPage_listar
-            // 
-            this.tabPage_listar.Controls.Add(this.txt_codigoListar);
-            this.tabPage_listar.Controls.Add(this.label10);
-            this.tabPage_listar.Controls.Add(this.dgv_listado);
-            this.tabPage_listar.Controls.Add(this.label11);
-            this.tabPage_listar.Location = new System.Drawing.Point(4, 30);
-            this.tabPage_listar.Name = "tabPage_listar";
-            this.tabPage_listar.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_listar.Size = new System.Drawing.Size(1005, 1061);
-            this.tabPage_listar.TabIndex = 2;
-            this.tabPage_listar.Text = "Listar";
-            this.tabPage_listar.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_editar
-            // 
-            this.checkBox_editar.AutoSize = true;
-            this.checkBox_editar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_editar.Location = new System.Drawing.Point(806, 321);
-            this.checkBox_editar.Name = "checkBox_editar";
-            this.checkBox_editar.Size = new System.Drawing.Size(90, 28);
-            this.checkBox_editar.TabIndex = 7;
-            this.checkBox_editar.Text = "Editar ";
-            this.checkBox_editar.UseVisualStyleBackColor = true;
-            // 
-            // button_guardar_edicion
-            // 
-            this.button_guardar_edicion.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_guardar_edicion.Location = new System.Drawing.Point(436, 667);
-            this.button_guardar_edicion.Name = "button_guardar_edicion";
-            this.button_guardar_edicion.Size = new System.Drawing.Size(90, 36);
-            this.button_guardar_edicion.TabIndex = 8;
-            this.button_guardar_edicion.Text = "Guardar";
-            this.button_guardar_edicion.UseVisualStyleBackColor = true;
-            // 
-            // txt_codigoListar
-            // 
-            this.txt_codigoListar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_codigoListar.Location = new System.Drawing.Point(526, 144);
-            this.txt_codigoListar.Multiline = true;
-            this.txt_codigoListar.Name = "txt_codigoListar";
-            this.txt_codigoListar.Size = new System.Drawing.Size(288, 32);
-            this.txt_codigoListar.TabIndex = 10;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(138, 152);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(363, 24);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Ingrese código o nombre de la película:";
-            // 
-            // dgv_listado
-            // 
-            this.dgv_listado.AllowUserToAddRows = false;
-            this.dgv_listado.AllowUserToDeleteRows = false;
-            this.dgv_listado.AllowUserToResizeColumns = false;
-            this.dgv_listado.AllowUserToResizeRows = false;
-            this.dgv_listado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_listado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.Column_precio});
-            this.dgv_listado.Location = new System.Drawing.Point(78, 233);
-            this.dgv_listado.Name = "dgv_listado";
-            this.dgv_listado.RowHeadersVisible = false;
-            this.dgv_listado.RowHeadersWidth = 51;
-            this.dgv_listado.RowTemplate.Height = 24;
-            this.dgv_listado.Size = new System.Drawing.Size(855, 363);
-            this.dgv_listado.TabIndex = 8;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label11.Location = new System.Drawing.Point(332, 52);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(299, 40);
-            this.label11.TabIndex = 7;
-            this.label11.Text = "Listado de películas";
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(235, 422);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(133, 24);
+            this.label17.TabIndex = 25;
+            this.label17.Text = "Precio boleta:";
             // 
             // label12
             // 
@@ -539,65 +461,113 @@
             this.label15.TabIndex = 15;
             this.label15.Text = "Nombre:";
             // 
-            // tabPage_ventas
+            // button_guardar_edicion
             // 
-            this.tabPage_ventas.Controls.Add(this.button_confirmar_funcion);
-            this.tabPage_ventas.Controls.Add(this.groupBox1);
-            this.tabPage_ventas.Controls.Add(this.label23);
-            this.tabPage_ventas.Controls.Add(this.cb_N_boletas);
-            this.tabPage_ventas.Controls.Add(this.cb_hora_funcion);
-            this.tabPage_ventas.Controls.Add(this.cb_dia_funcion);
-            this.tabPage_ventas.Controls.Add(this.label22);
-            this.tabPage_ventas.Controls.Add(this.label21);
-            this.tabPage_ventas.Controls.Add(this.label20);
-            this.tabPage_ventas.Controls.Add(this.label19);
-            this.tabPage_ventas.Controls.Add(this.cb_pelicula_opciones);
-            this.tabPage_ventas.Controls.Add(this.label18);
-            this.tabPage_ventas.Location = new System.Drawing.Point(4, 30);
-            this.tabPage_ventas.Name = "tabPage_ventas";
-            this.tabPage_ventas.Size = new System.Drawing.Size(1005, 1061);
-            this.tabPage_ventas.TabIndex = 3;
-            this.tabPage_ventas.Text = "Ventas";
-            this.tabPage_ventas.UseVisualStyleBackColor = true;
+            this.button_guardar_edicion.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_guardar_edicion.Location = new System.Drawing.Point(436, 667);
+            this.button_guardar_edicion.Name = "button_guardar_edicion";
+            this.button_guardar_edicion.Size = new System.Drawing.Size(90, 36);
+            this.button_guardar_edicion.TabIndex = 8;
+            this.button_guardar_edicion.Text = "Guardar";
+            this.button_guardar_edicion.UseVisualStyleBackColor = true;
             // 
-            // txt_precioBoleta
+            // checkBox_editar
             // 
-            this.txt_precioBoleta.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_precioBoleta.Location = new System.Drawing.Point(379, 425);
-            this.txt_precioBoleta.Multiline = true;
-            this.txt_precioBoleta.Name = "txt_precioBoleta";
-            this.txt_precioBoleta.Size = new System.Drawing.Size(249, 32);
-            this.txt_precioBoleta.TabIndex = 16;
+            this.checkBox_editar.AutoSize = true;
+            this.checkBox_editar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_editar.Location = new System.Drawing.Point(806, 321);
+            this.checkBox_editar.Name = "checkBox_editar";
+            this.checkBox_editar.Size = new System.Drawing.Size(90, 28);
+            this.checkBox_editar.TabIndex = 7;
+            this.checkBox_editar.Text = "Editar ";
+            this.checkBox_editar.UseVisualStyleBackColor = true;
             // 
-            // label16
+            // txt_busqueda
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(191, 433);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(133, 24);
-            this.label16.TabIndex = 15;
-            this.label16.Text = "Precio boleta:";
+            this.txt_busqueda.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_busqueda.Location = new System.Drawing.Point(469, 124);
+            this.txt_busqueda.Multiline = true;
+            this.txt_busqueda.Name = "txt_busqueda";
+            this.txt_busqueda.Size = new System.Drawing.Size(288, 32);
+            this.txt_busqueda.TabIndex = 6;
             // 
-            // txt_precioBoleta_buscado
+            // label9
             // 
-            this.txt_precioBoleta_buscado.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_precioBoleta_buscado.Location = new System.Drawing.Point(423, 414);
-            this.txt_precioBoleta_buscado.Multiline = true;
-            this.txt_precioBoleta_buscado.Name = "txt_precioBoleta_buscado";
-            this.txt_precioBoleta_buscado.ReadOnly = true;
-            this.txt_precioBoleta_buscado.Size = new System.Drawing.Size(249, 32);
-            this.txt_precioBoleta_buscado.TabIndex = 26;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(149, 132);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(294, 24);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Ingrese el código de la película:";
             // 
-            // label17
+            // label8
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(235, 422);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(133, 24);
-            this.label17.TabIndex = 25;
-            this.label17.Text = "Precio boleta:";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.ForestGreen;
+            this.label8.Location = new System.Drawing.Point(341, 52);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(242, 40);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Buscar película ";
+            // 
+            // tabPage_listar
+            // 
+            this.tabPage_listar.Controls.Add(this.txt_codigoListar);
+            this.tabPage_listar.Controls.Add(this.label10);
+            this.tabPage_listar.Controls.Add(this.dgv_listado);
+            this.tabPage_listar.Controls.Add(this.label11);
+            this.tabPage_listar.Location = new System.Drawing.Point(4, 30);
+            this.tabPage_listar.Name = "tabPage_listar";
+            this.tabPage_listar.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_listar.Size = new System.Drawing.Size(1005, 1061);
+            this.tabPage_listar.TabIndex = 2;
+            this.tabPage_listar.Text = "Listar";
+            this.tabPage_listar.UseVisualStyleBackColor = true;
+            // 
+            // txt_codigoListar
+            // 
+            this.txt_codigoListar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_codigoListar.Location = new System.Drawing.Point(526, 144);
+            this.txt_codigoListar.Multiline = true;
+            this.txt_codigoListar.Name = "txt_codigoListar";
+            this.txt_codigoListar.Size = new System.Drawing.Size(288, 32);
+            this.txt_codigoListar.TabIndex = 10;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(138, 152);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(363, 24);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Ingrese código o nombre de la película:";
+            // 
+            // dgv_listado
+            // 
+            this.dgv_listado.AllowUserToAddRows = false;
+            this.dgv_listado.AllowUserToDeleteRows = false;
+            this.dgv_listado.AllowUserToResizeColumns = false;
+            this.dgv_listado.AllowUserToResizeRows = false;
+            this.dgv_listado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_listado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.Column_precio});
+            this.dgv_listado.Location = new System.Drawing.Point(78, 233);
+            this.dgv_listado.Name = "dgv_listado";
+            this.dgv_listado.RowHeadersVisible = false;
+            this.dgv_listado.RowHeadersWidth = 51;
+            this.dgv_listado.RowTemplate.Height = 24;
+            this.dgv_listado.Size = new System.Drawing.Size(855, 363);
+            this.dgv_listado.TabIndex = 8;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -641,118 +611,61 @@
             this.Column_precio.MinimumWidth = 6;
             this.Column_precio.Name = "Column_precio";
             // 
-            // label18
+            // label11
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label18.Location = new System.Drawing.Point(392, 52);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(161, 40);
-            this.label18.TabIndex = 8;
-            this.label18.Text = "Funciones";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.ForestGreen;
+            this.label11.Location = new System.Drawing.Point(332, 52);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(299, 40);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "Listado de películas";
             // 
-            // cb_pelicula_opciones
+            // tabPage_ventas
             // 
-            this.cb_pelicula_opciones.FormattingEnabled = true;
-            this.cb_pelicula_opciones.Location = new System.Drawing.Point(346, 197);
-            this.cb_pelicula_opciones.Name = "cb_pelicula_opciones";
-            this.cb_pelicula_opciones.Size = new System.Drawing.Size(251, 29);
-            this.cb_pelicula_opciones.TabIndex = 9;
-            this.cb_pelicula_opciones.Tag = "";
+            this.tabPage_ventas.Controls.Add(this.button_confirmar_funcion);
+            this.tabPage_ventas.Controls.Add(this.groupBox1);
+            this.tabPage_ventas.Controls.Add(this.label23);
+            this.tabPage_ventas.Controls.Add(this.cb_N_boletas);
+            this.tabPage_ventas.Controls.Add(this.cb_hora_funcion);
+            this.tabPage_ventas.Controls.Add(this.cb_dia_funcion);
+            this.tabPage_ventas.Controls.Add(this.label22);
+            this.tabPage_ventas.Controls.Add(this.label21);
+            this.tabPage_ventas.Controls.Add(this.label20);
+            this.tabPage_ventas.Controls.Add(this.label19);
+            this.tabPage_ventas.Controls.Add(this.cb_pelicula_opciones);
+            this.tabPage_ventas.Controls.Add(this.label18);
+            this.tabPage_ventas.Location = new System.Drawing.Point(4, 30);
+            this.tabPage_ventas.Name = "tabPage_ventas";
+            this.tabPage_ventas.Size = new System.Drawing.Size(1005, 1061);
+            this.tabPage_ventas.TabIndex = 3;
+            this.tabPage_ventas.Text = "Ventas";
+            this.tabPage_ventas.UseVisualStyleBackColor = true;
             // 
-            // label19
+            // button_confirmar_funcion
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(359, 152);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(224, 24);
-            this.label19.TabIndex = 10;
-            this.label19.Text = "Seleccione una película:";
+            this.button_confirmar_funcion.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_confirmar_funcion.Location = new System.Drawing.Point(431, 847);
+            this.button_confirmar_funcion.Name = "button_confirmar_funcion";
+            this.button_confirmar_funcion.Size = new System.Drawing.Size(122, 36);
+            this.button_confirmar_funcion.TabIndex = 31;
+            this.button_confirmar_funcion.Text = "Confirmar";
+            this.button_confirmar_funcion.UseVisualStyleBackColor = true;
             // 
-            // label20
+            // groupBox1
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(427, 267);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(83, 24);
-            this.label20.TabIndex = 11;
-            this.label20.Text = "Horario:";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(314, 325);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(47, 24);
-            this.label21.TabIndex = 12;
-            this.label21.Text = "Día:";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(314, 389);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(60, 24);
-            this.label22.TabIndex = 13;
-            this.label22.Text = "Hora:";
-            // 
-            // cb_dia_funcion
-            // 
-            this.cb_dia_funcion.Enabled = false;
-            this.cb_dia_funcion.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_dia_funcion.FormattingEnabled = true;
-            this.cb_dia_funcion.Items.AddRange(new object[] {
-            "Acción",
-            "Aventura",
-            "Comedia",
-            "Drama",
-            "Terror",
-            "Romance",
-            "Ciencia ficción"});
-            this.cb_dia_funcion.Location = new System.Drawing.Point(399, 317);
-            this.cb_dia_funcion.Name = "cb_dia_funcion";
-            this.cb_dia_funcion.Size = new System.Drawing.Size(203, 32);
-            this.cb_dia_funcion.TabIndex = 21;
-            // 
-            // cb_hora_funcion
-            // 
-            this.cb_hora_funcion.Enabled = false;
-            this.cb_hora_funcion.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_hora_funcion.FormattingEnabled = true;
-            this.cb_hora_funcion.Items.AddRange(new object[] {
-            "Acción",
-            "Aventura",
-            "Comedia",
-            "Drama",
-            "Terror",
-            "Romance",
-            "Ciencia ficción"});
-            this.cb_hora_funcion.Location = new System.Drawing.Point(399, 381);
-            this.cb_hora_funcion.Name = "cb_hora_funcion";
-            this.cb_hora_funcion.Size = new System.Drawing.Size(203, 32);
-            this.cb_hora_funcion.TabIndex = 22;
-            // 
-            // cb_N_boletas
-            // 
-            this.cb_N_boletas.Location = new System.Drawing.Point(412, 514);
-            this.cb_N_boletas.Name = "cb_N_boletas";
-            this.cb_N_boletas.Size = new System.Drawing.Size(120, 28);
-            this.cb_N_boletas.TabIndex = 23;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(369, 472);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(195, 24);
-            this.label23.TabIndex = 24;
-            this.label23.Text = "Cantidad de boletas:";
+            this.groupBox1.Controls.Add(this.label25);
+            this.groupBox1.Controls.Add(this.lbl_precio_total);
+            this.groupBox1.Controls.Add(this.label26);
+            this.groupBox1.Controls.Add(this.lbl_precio_unitario);
+            this.groupBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(268, 613);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(445, 151);
+            this.groupBox1.TabIndex = 30;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Resumen de la compra";
             // 
             // label25
             // 
@@ -763,6 +676,16 @@
             this.label25.Size = new System.Drawing.Size(145, 24);
             this.label25.TabIndex = 26;
             this.label25.Text = "Precio unitario:";
+            // 
+            // lbl_precio_total
+            // 
+            this.lbl_precio_total.AutoSize = true;
+            this.lbl_precio_total.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_precio_total.Location = new System.Drawing.Point(310, 101);
+            this.lbl_precio_total.Name = "lbl_precio_total";
+            this.lbl_precio_total.Size = new System.Drawing.Size(31, 24);
+            this.lbl_precio_total.TabIndex = 29;
+            this.lbl_precio_total.Text = "---";
             // 
             // label26
             // 
@@ -784,49 +707,129 @@
             this.lbl_precio_unitario.TabIndex = 28;
             this.lbl_precio_unitario.Text = "---";
             // 
-            // lbl_precio_total
+            // label23
             // 
-            this.lbl_precio_total.AutoSize = true;
-            this.lbl_precio_total.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_precio_total.Location = new System.Drawing.Point(310, 101);
-            this.lbl_precio_total.Name = "lbl_precio_total";
-            this.lbl_precio_total.Size = new System.Drawing.Size(31, 24);
-            this.lbl_precio_total.TabIndex = 29;
-            this.lbl_precio_total.Text = "---";
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(369, 472);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(195, 24);
+            this.label23.TabIndex = 24;
+            this.label23.Text = "Cantidad de boletas:";
             // 
-            // groupBox1
+            // cb_N_boletas
             // 
-            this.groupBox1.Controls.Add(this.label25);
-            this.groupBox1.Controls.Add(this.lbl_precio_total);
-            this.groupBox1.Controls.Add(this.label26);
-            this.groupBox1.Controls.Add(this.lbl_precio_unitario);
-            this.groupBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(268, 613);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(445, 151);
-            this.groupBox1.TabIndex = 30;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Resumen de la compra";
+            this.cb_N_boletas.Location = new System.Drawing.Point(412, 514);
+            this.cb_N_boletas.Name = "cb_N_boletas";
+            this.cb_N_boletas.Size = new System.Drawing.Size(120, 28);
+            this.cb_N_boletas.TabIndex = 23;
             // 
-            // button_confirmar_funcion
+            // cb_hora_funcion
             // 
-            this.button_confirmar_funcion.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_confirmar_funcion.Location = new System.Drawing.Point(431, 847);
-            this.button_confirmar_funcion.Name = "button_confirmar_funcion";
-            this.button_confirmar_funcion.Size = new System.Drawing.Size(122, 36);
-            this.button_confirmar_funcion.TabIndex = 31;
-            this.button_confirmar_funcion.Text = "Confirmar";
-            this.button_confirmar_funcion.UseVisualStyleBackColor = true;
+            this.cb_hora_funcion.Enabled = false;
+            this.cb_hora_funcion.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_hora_funcion.FormattingEnabled = true;
+            this.cb_hora_funcion.Items.AddRange(new object[] {
+            "Acción",
+            "Aventura",
+            "Comedia",
+            "Drama",
+            "Terror",
+            "Romance",
+            "Ciencia ficción"});
+            this.cb_hora_funcion.Location = new System.Drawing.Point(399, 381);
+            this.cb_hora_funcion.Name = "cb_hora_funcion";
+            this.cb_hora_funcion.Size = new System.Drawing.Size(203, 32);
+            this.cb_hora_funcion.TabIndex = 22;
+            // 
+            // cb_dia_funcion
+            // 
+            this.cb_dia_funcion.Enabled = false;
+            this.cb_dia_funcion.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_dia_funcion.FormattingEnabled = true;
+            this.cb_dia_funcion.Items.AddRange(new object[] {
+            "Acción",
+            "Aventura",
+            "Comedia",
+            "Drama",
+            "Terror",
+            "Romance",
+            "Ciencia ficción"});
+            this.cb_dia_funcion.Location = new System.Drawing.Point(399, 317);
+            this.cb_dia_funcion.Name = "cb_dia_funcion";
+            this.cb_dia_funcion.Size = new System.Drawing.Size(203, 32);
+            this.cb_dia_funcion.TabIndex = 21;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(314, 389);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(60, 24);
+            this.label22.TabIndex = 13;
+            this.label22.Text = "Hora:";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(314, 325);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(47, 24);
+            this.label21.TabIndex = 12;
+            this.label21.Text = "Día:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(427, 267);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(83, 24);
+            this.label20.TabIndex = 11;
+            this.label20.Text = "Horario:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(359, 152);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(224, 24);
+            this.label19.TabIndex = 10;
+            this.label19.Text = "Seleccione una película:";
+            // 
+            // cb_pelicula_opciones
+            // 
+            this.cb_pelicula_opciones.FormattingEnabled = true;
+            this.cb_pelicula_opciones.Location = new System.Drawing.Point(346, 197);
+            this.cb_pelicula_opciones.Name = "cb_pelicula_opciones";
+            this.cb_pelicula_opciones.Size = new System.Drawing.Size(251, 29);
+            this.cb_pelicula_opciones.TabIndex = 9;
+            this.cb_pelicula_opciones.Tag = "";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.ForestGreen;
+            this.label18.Location = new System.Drawing.Point(392, 52);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(161, 40);
+            this.label18.TabIndex = 8;
+            this.label18.Text = "Funciones";
             // 
             // Form_principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1012, 1093);
+            this.ClientSize = new System.Drawing.Size(1012, 1055);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form_principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cines Don Chucho";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_principal_FormClosed);
             this.tabControl1.ResumeLayout(false);
             this.tabPage_registrar.ResumeLayout(false);
             this.tabPage_registrar.PerformLayout();
@@ -837,9 +840,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listado)).EndInit();
             this.tabPage_ventas.ResumeLayout(false);
             this.tabPage_ventas.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cb_N_boletas)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cb_N_boletas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -860,7 +863,7 @@
         private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cb_genero;
-        private System.Windows.Forms.DateTimePicker timpicker_horaFuncion;
+        private System.Windows.Forms.DateTimePicker timepicker_horaFuncion;
         private System.Windows.Forms.DateTimePicker datepicker_fecha;
         private System.Windows.Forms.Button button_limpiar;
         private System.Windows.Forms.Button button_guardar;

@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\akile\\Desktop\\Universidad\\6\u00B0 semestre\\Herramientas III\\CineDonChucho\\",
+  "WorkspaceRootPath": "D:\\Uni\\CineDonChucho\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CB360E4-AE12-42D7-B47E-4005961F84C5}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\akile\\desktop\\universidad\\6\u00B0 semestre\\herramientas iii\\cinedonchucho\\capapresentacion\\form_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6CB360E4-AE12-42D7-B47E-4005961F84C5}|CapaPresentacion\\CapaPresentacion.csproj|D:\\Uni\\CineDonChucho\\capapresentacion\\form_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CB360E4-AE12-42D7-B47E-4005961F84C5}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\form_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CB360E4-AE12-42D7-B47E-4005961F84C5}|CapaPresentacion\\CapaPresentacion.csproj|d:\\uni\\cinedonchucho\\capapresentacion\\form_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6CB360E4-AE12-42D7-B47E-4005961F84C5}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\form_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CB360E4-AE12-42D7-B47E-4005961F84C5}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\akile\\desktop\\universidad\\6\u00B0 semestre\\herramientas iii\\cinedonchucho\\capapresentacion\\form_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CB360E4-AE12-42D7-B47E-4005961F84C5}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\form_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26E8BA86-F271-42F9-860A-12940B0E81A2}|CapaNegocio\\CapaNegocio.csproj|d:\\uni\\cinedonchucho\\capanegocio\\cn_cine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26E8BA86-F271-42F9-860A-12940B0E81A2}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\cn_cine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,28 +22,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "CN_Cine.cs",
+              "DocumentMoniker": "D:\\Uni\\CineDonChucho\\CapaNegocio\\CN_Cine.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\CN_Cine.cs",
+              "ToolTip": "D:\\Uni\\CineDonChucho\\CapaNegocio\\CN_Cine.cs",
+              "RelativeToolTip": "CapaNegocio\\CN_Cine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T20:12:37.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Form_principal.cs",
-              "DocumentMoniker": "C:\\Users\\akile\\Desktop\\Universidad\\6\u00B0 semestre\\Herramientas III\\CineDonChucho\\CapaPresentacion\\Form_principal.cs",
+              "DocumentMoniker": "D:\\Uni\\CineDonChucho\\CapaPresentacion\\Form_principal.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\Form_principal.cs",
-              "ToolTip": "C:\\Users\\akile\\Desktop\\Universidad\\6\u00B0 semestre\\Herramientas III\\CineDonChucho\\CapaPresentacion\\Form_principal.cs",
+              "ToolTip": "D:\\Uni\\CineDonChucho\\CapaPresentacion\\Form_principal.cs",
               "RelativeToolTip": "CapaPresentacion\\Form_principal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwCIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-05T17:35:50.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form_principal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\akile\\Desktop\\Universidad\\6\u00B0 semestre\\Herramientas III\\CineDonChucho\\CapaPresentacion\\Form_principal.cs",
+              "DocumentMoniker": "D:\\Uni\\CineDonChucho\\CapaPresentacion\\Form_principal.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\Form_principal.cs",
-              "ToolTip": "C:\\Users\\akile\\Desktop\\Universidad\\6\u00B0 semestre\\Herramientas III\\CineDonChucho\\CapaPresentacion\\Form_principal.cs [Dise\u00F1o]",
+              "ToolTip": "D:\\Uni\\CineDonChucho\\CapaPresentacion\\Form_principal.cs [Dise\u00F1o]",
               "RelativeToolTip": "CapaPresentacion\\Form_principal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-05T17:04:59.891Z",

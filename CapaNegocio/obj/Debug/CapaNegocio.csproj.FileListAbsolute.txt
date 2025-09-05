@@ -7,3 +7,12 @@ C:\Users\akile\Desktop\Universidad\6° semestre\Herramientas III\Taller SQL\Cine
 C:\Users\akile\Desktop\Universidad\6° semestre\Herramientas III\Taller SQL\CineDonChucho\CapaNegocio\obj\Debug\CapaNego.81B9D119.Up2Date
 C:\Users\akile\Desktop\Universidad\6° semestre\Herramientas III\Taller SQL\CineDonChucho\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\akile\Desktop\Universidad\6° semestre\Herramientas III\Taller SQL\CineDonChucho\CapaNegocio\obj\Debug\CapaNegocio.pdb
+D:\Uni\CineDonChucho\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\Uni\CineDonChucho\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\Uni\CineDonChucho\CapaNegocio\bin\Debug\CapaDatos.dll
+D:\Uni\CineDonChucho\CapaNegocio\bin\Debug\CapaDatos.pdb
+D:\Uni\CineDonChucho\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+D:\Uni\CineDonChucho\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+D:\Uni\CineDonChucho\CapaNegocio\obj\Debug\CapaNego.81B9D119.Up2Date
+D:\Uni\CineDonChucho\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\Uni\CineDonChucho\CapaNegocio\obj\Debug\CapaNegocio.pdb
