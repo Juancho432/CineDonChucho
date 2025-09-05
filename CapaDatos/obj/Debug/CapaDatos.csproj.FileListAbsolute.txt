@@ -1,0 +1,6 @@
+C:\Users\akile\Desktop\Universidad\6° semestre\Herramientas III\Taller SQL\CineDonChucho\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\akile\Desktop\Universidad\6° semestre\Herramientas III\Taller SQL\CineDonChucho\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\akile\Desktop\Universidad\6° semestre\Herramientas III\Taller SQL\CineDonChucho\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\akile\Desktop\Universidad\6° semestre\Herramientas III\Taller SQL\CineDonChucho\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\akile\Desktop\Universidad\6° semestre\Herramientas III\Taller SQL\CineDonChucho\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\akile\Desktop\Universidad\6° semestre\Herramientas III\Taller SQL\CineDonChucho\CapaDatos\obj\Debug\CapaDatos.pdb
