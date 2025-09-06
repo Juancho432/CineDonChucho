@@ -30,7 +30,7 @@ namespace CapaDatos
                 cn.Open();
                 comando.ExecuteNonQuery();
             }
-        }
+        }//metodo
 
         // Listar Ventas
         public DataTable ListarVentas()
@@ -45,6 +45,7 @@ namespace CapaDatos
                 da.Fill(dt);
             }
             return dt;
-        }
-    }
+        }//metodo
+
+    }//clase
 }

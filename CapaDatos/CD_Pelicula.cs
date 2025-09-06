@@ -80,7 +80,7 @@ namespace CapaDatos
             }
 
             return (dt.Rows.Count > 0) ? dt.Rows[0] : null;
-        }
+        }//metodo
 
 
         // Listar Películas

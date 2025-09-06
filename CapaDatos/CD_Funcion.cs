@@ -29,7 +29,7 @@ namespace CapaDatos
                 cn.Open();
                 comando.ExecuteNonQuery();
             }
-        }
+        }//metodo
 
         // Listar Funciones con su Película
         public DataTable ListarFunciones()
@@ -44,6 +44,7 @@ namespace CapaDatos
                 da.Fill(dt);
             }
             return dt;
-        }
-    }
+        }//metodo
+
+    }//clase
 }
