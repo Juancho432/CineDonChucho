@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
@@ -81,7 +76,6 @@ namespace CapaDatos
 
             return (dt.Rows.Count > 0) ? dt.Rows[0] : null;
         }//metodo
-
 
         // Listar Películas
         public DataTable ListarPeliculas()

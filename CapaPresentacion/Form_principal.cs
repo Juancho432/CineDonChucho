@@ -22,29 +22,15 @@ namespace CapaPresentacion
 
         private void Button_guardar_Click(object sender, EventArgs e)
         {
-            try
-            {
-                objCN.RegistrarPelicula(
-                        new Pelicula
-                        {
-                            Codigo = txt_codigo.Text,
-                            Nombre = txt_nombre.Text,
-                            Duracion = uint.Parse(txt_duracion.Text),
-                            Genero = cb_genero.Text,
-                            Precio = double.Parse(txt_precioBoleta.Text),
-                            Funcion = datepicker_fecha.Value.Add(timepicker_horaFuncion.Value.TimeOfDay)
-                        }
-                );
-            }
-            catch (CN_Excepciones.RegistroFallido)
-            {
-                MessageBox.Show("Error al Guardar la Pelicula");
-                return;
-            }
-            finally
-            {
-                LimpiarCampos();
-            }
+            objCN.RegistrarPelicula(
+                    new Pelicula
+                    {
+                        Codigo = txt_codigo.Text,
+                        Nombre = txt_nombre.Text,
+                        Duracion = uint.Parse(txt_duracion.Text),
+                        Genero = cb_genero.Text,
+                    }
+            );
 
             MessageBox.Show("Pelicula Guardada con Exito");
         }
@@ -63,6 +49,46 @@ namespace CapaPresentacion
             txt_precioBoleta.Clear();
             datepicker_fecha.Text = string.Empty;
             timepicker_horaFuncion.Text = string.Empty;
+        }
+
+        private void Txt_busqueda_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                Pelicula result = objCN.BuscarPelicula(txt_busqueda.Text);
+                txt_nombre_buscado.Text = result.Nombre;
+                txt_duracion_buscada.Text = result.Duracion.ToString();
+                comboBox_genero_buscado.Text = result.Genero;
+            }
+        }
+
+        private void CheckBox_editar_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_nombre_buscado.Enabled = !txt_nombre_buscado.Enabled;
+            txt_duracion_buscada.Enabled = !txt_duracion_buscada.Enabled;
+            comboBox_genero_buscado.Enabled = !comboBox_genero_buscado.Enabled;
+            txt_precioBoleta_buscado.Enabled = !txt_precioBoleta_buscado.Enabled;
+            timepicker_fecha_buscado.Enabled = !timepicker_fecha_buscado.Enabled;
+            timepicker_hora_buscado.Enabled = !timepicker_hora_buscado.Enabled;
+        }
+
+        private void Txt_codigoListar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                dgv_listado.DataSource = null;
+                dgv_listado.DataSource = objCN.ListarPeliculas();
+            }
+        }
+
+        private void Txt_codigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                Pelicula result = objCN.BuscarPelicula(txt_codigo.Text);
+                txt_nombre.Text = result.Nombre;
+                txt_nombre.Enabled = !txt_nombre.Enabled;
+            }
         }
     }
 }
