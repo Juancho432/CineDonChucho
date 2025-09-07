@@ -1,7 +1,8 @@
 ﻿
+using System;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Configuration;
 
 namespace CapaDatos
 {
@@ -12,15 +13,20 @@ namespace CapaDatos
             ConfigurationManager.ConnectionStrings["MiConexion"].ConnectionString;
 
         // Insertar Venta
-        public void InsertarVenta(int funcionID, int cantidadBoletas, decimal valorUnitario)
+        public void InsertarVenta(int codigoPelicula, int cantidadBoletas, decimal valorUnitario, TimeSpan? horaFuncion = null)
         {
             using (SqlConnection cn = new SqlConnection(cadena))
             {
                 SqlCommand comando = new SqlCommand("sp_InsertarVenta", cn);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.AddWithValue("@FuncionID", funcionID);
+                comando.Parameters.AddWithValue("@CodigoPelicula", codigoPelicula);
                 comando.Parameters.AddWithValue("@CantidadBoletas", cantidadBoletas);
                 comando.Parameters.AddWithValue("@ValorUnitario", valorUnitario);
+
+                if (horaFuncion.HasValue)
+                    comando.Parameters.AddWithValue("@HoraFuncion", horaFuncion.Value);
+                else
+                    comando.Parameters.AddWithValue("@HoraFuncion", DBNull.Value);
 
                 cn.Open();
                 comando.ExecuteNonQuery();
