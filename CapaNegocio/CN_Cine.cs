@@ -16,10 +16,12 @@ namespace CapaNegocio
             DataRow result = objCDPelicula.BuscarPelicula(int.Parse(codigo));
             return new Pelicula
             {
-                Codigo = result["codigo"].ToString(),
-                Nombre = result["nombre"].ToString(),
-                Duracion = uint.Parse(result["duracion"].ToString()),
-                Genero = result["genero"].ToString()
+                Codigo = result["Codigo"].ToString(),
+                Nombre = result["Nombre"].ToString(),
+                Duracion = uint.Parse(result["Duracion"].ToString()),
+                Genero = result["Genero"].ToString(),
+                Precio = decimal.Parse(result["PrecioBoleta"].ToString()),
+                Fecha = DateTime.Parse(result["FechaHoraFuncion"].ToString())
             };
         }
 
