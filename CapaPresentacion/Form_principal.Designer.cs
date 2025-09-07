@@ -68,13 +68,6 @@
             this.txt_codigoListar = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dgv_listado = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label11 = new System.Windows.Forms.Label();
             this.tabPage_ventas = new System.Windows.Forms.TabPage();
             this.button_confirmar_funcion = new System.Windows.Forms.Button();
@@ -482,7 +475,7 @@
             // button_guardar_edicion
             // 
             this.button_guardar_edicion.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_guardar_edicion.Location = new System.Drawing.Point(436, 667);
+            this.button_guardar_edicion.Location = new System.Drawing.Point(436, 638);
             this.button_guardar_edicion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_guardar_edicion.Name = "button_guardar_edicion";
             this.button_guardar_edicion.Size = new System.Drawing.Size(91, 36);
@@ -580,14 +573,6 @@
             this.dgv_listado.AllowUserToResizeRows = false;
             this.dgv_listado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_listado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.Column_precio});
             this.dgv_listado.Location = new System.Drawing.Point(77, 233);
             this.dgv_listado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgv_listado.Name = "dgv_listado";
@@ -596,48 +581,6 @@
             this.dgv_listado.RowTemplate.Height = 24;
             this.dgv_listado.Size = new System.Drawing.Size(855, 363);
             this.dgv_listado.TabIndex = 8;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Código";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Duración (min)";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Género";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Fecha Función";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Hora función";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // Column_precio
-            // 
-            this.Column_precio.HeaderText = "Precio boleta";
-            this.Column_precio.MinimumWidth = 6;
-            this.Column_precio.Name = "Column_precio";
             // 
             // label11
             // 
@@ -675,7 +618,7 @@
             // button_confirmar_funcion
             // 
             this.button_confirmar_funcion.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_confirmar_funcion.Location = new System.Drawing.Point(431, 847);
+            this.button_confirmar_funcion.Location = new System.Drawing.Point(418, 685);
             this.button_confirmar_funcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_confirmar_funcion.Name = "button_confirmar_funcion";
             this.button_confirmar_funcion.Size = new System.Drawing.Size(123, 36);
@@ -690,7 +633,7 @@
             this.groupBox1.Controls.Add(this.label26);
             this.groupBox1.Controls.Add(this.lbl_precio_unitario);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(268, 613);
+            this.groupBox1.Location = new System.Drawing.Point(259, 497);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -743,7 +686,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(369, 473);
+            this.label23.Location = new System.Drawing.Point(375, 383);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(195, 24);
             this.label23.TabIndex = 24;
@@ -751,7 +694,7 @@
             // 
             // cb_N_boletas
             // 
-            this.cb_N_boletas.Location = new System.Drawing.Point(412, 514);
+            this.cb_N_boletas.Location = new System.Drawing.Point(418, 424);
             this.cb_N_boletas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_N_boletas.Name = "cb_N_boletas";
             this.cb_N_boletas.Size = new System.Drawing.Size(120, 28);
@@ -770,7 +713,7 @@
             "Terror",
             "Romance",
             "Ciencia ficción"});
-            this.cb_hora_funcion.Location = new System.Drawing.Point(399, 382);
+            this.cb_hora_funcion.Location = new System.Drawing.Point(561, 296);
             this.cb_hora_funcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_hora_funcion.Name = "cb_hora_funcion";
             this.cb_hora_funcion.Size = new System.Drawing.Size(203, 32);
@@ -789,7 +732,7 @@
             "Terror",
             "Romance",
             "Ciencia ficción"});
-            this.cb_dia_funcion.Location = new System.Drawing.Point(399, 318);
+            this.cb_dia_funcion.Location = new System.Drawing.Point(235, 296);
             this.cb_dia_funcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_dia_funcion.Name = "cb_dia_funcion";
             this.cb_dia_funcion.Size = new System.Drawing.Size(203, 32);
@@ -799,7 +742,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(315, 389);
+            this.label22.Location = new System.Drawing.Point(495, 299);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(60, 24);
             this.label22.TabIndex = 13;
@@ -809,7 +752,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(315, 325);
+            this.label21.Location = new System.Drawing.Point(182, 299);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(47, 24);
             this.label21.TabIndex = 12;
@@ -819,7 +762,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(427, 267);
+            this.label20.Location = new System.Drawing.Point(426, 241);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(83, 24);
             this.label20.TabIndex = 11;
@@ -829,7 +772,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(359, 153);
+            this.label19.Location = new System.Drawing.Point(220, 159);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(224, 24);
             this.label19.TabIndex = 10;
@@ -838,7 +781,7 @@
             // cb_pelicula_opciones
             // 
             this.cb_pelicula_opciones.FormattingEnabled = true;
-            this.cb_pelicula_opciones.Location = new System.Drawing.Point(347, 197);
+            this.cb_pelicula_opciones.Location = new System.Drawing.Point(464, 159);
             this.cb_pelicula_opciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_pelicula_opciones.Name = "cb_pelicula_opciones";
             this.cb_pelicula_opciones.Size = new System.Drawing.Size(251, 29);
@@ -860,7 +803,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1012, 750);
+            this.ClientSize = new System.Drawing.Size(1012, 941);
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form_principal";
@@ -928,13 +871,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txt_precioBoleta_buscado;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_precio;
         private System.Windows.Forms.ComboBox cb_pelicula_opciones;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
