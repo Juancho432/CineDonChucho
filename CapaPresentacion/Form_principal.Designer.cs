@@ -78,11 +78,6 @@
             this.lbl_precio_unitario = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.cb_N_boletas = new System.Windows.Forms.NumericUpDown();
-            this.cb_hora_funcion = new System.Windows.Forms.ComboBox();
-            this.cb_dia_funcion = new System.Windows.Forms.ComboBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.cb_pelicula_opciones = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -599,11 +594,6 @@
             this.tabPage_ventas.Controls.Add(this.groupBox1);
             this.tabPage_ventas.Controls.Add(this.label23);
             this.tabPage_ventas.Controls.Add(this.cb_N_boletas);
-            this.tabPage_ventas.Controls.Add(this.cb_hora_funcion);
-            this.tabPage_ventas.Controls.Add(this.cb_dia_funcion);
-            this.tabPage_ventas.Controls.Add(this.label22);
-            this.tabPage_ventas.Controls.Add(this.label21);
-            this.tabPage_ventas.Controls.Add(this.label20);
             this.tabPage_ventas.Controls.Add(this.label19);
             this.tabPage_ventas.Controls.Add(this.cb_pelicula_opciones);
             this.tabPage_ventas.Controls.Add(this.label18);
@@ -618,7 +608,7 @@
             // button_confirmar_funcion
             // 
             this.button_confirmar_funcion.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_confirmar_funcion.Location = new System.Drawing.Point(418, 685);
+            this.button_confirmar_funcion.Location = new System.Drawing.Point(421, 636);
             this.button_confirmar_funcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_confirmar_funcion.Name = "button_confirmar_funcion";
             this.button_confirmar_funcion.Size = new System.Drawing.Size(123, 36);
@@ -633,7 +623,7 @@
             this.groupBox1.Controls.Add(this.label26);
             this.groupBox1.Controls.Add(this.lbl_precio_unitario);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(259, 497);
+            this.groupBox1.Location = new System.Drawing.Point(253, 391);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -686,7 +676,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(375, 383);
+            this.label23.Location = new System.Drawing.Point(249, 268);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(195, 24);
             this.label23.TabIndex = 24;
@@ -694,79 +684,11 @@
             // 
             // cb_N_boletas
             // 
-            this.cb_N_boletas.Location = new System.Drawing.Point(418, 424);
+            this.cb_N_boletas.Location = new System.Drawing.Point(464, 264);
             this.cb_N_boletas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_N_boletas.Name = "cb_N_boletas";
             this.cb_N_boletas.Size = new System.Drawing.Size(120, 28);
             this.cb_N_boletas.TabIndex = 23;
-            // 
-            // cb_hora_funcion
-            // 
-            this.cb_hora_funcion.Enabled = false;
-            this.cb_hora_funcion.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_hora_funcion.FormattingEnabled = true;
-            this.cb_hora_funcion.Items.AddRange(new object[] {
-            "Acción",
-            "Aventura",
-            "Comedia",
-            "Drama",
-            "Terror",
-            "Romance",
-            "Ciencia ficción"});
-            this.cb_hora_funcion.Location = new System.Drawing.Point(561, 296);
-            this.cb_hora_funcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cb_hora_funcion.Name = "cb_hora_funcion";
-            this.cb_hora_funcion.Size = new System.Drawing.Size(203, 32);
-            this.cb_hora_funcion.TabIndex = 22;
-            // 
-            // cb_dia_funcion
-            // 
-            this.cb_dia_funcion.Enabled = false;
-            this.cb_dia_funcion.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_dia_funcion.FormattingEnabled = true;
-            this.cb_dia_funcion.Items.AddRange(new object[] {
-            "Acción",
-            "Aventura",
-            "Comedia",
-            "Drama",
-            "Terror",
-            "Romance",
-            "Ciencia ficción"});
-            this.cb_dia_funcion.Location = new System.Drawing.Point(235, 296);
-            this.cb_dia_funcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cb_dia_funcion.Name = "cb_dia_funcion";
-            this.cb_dia_funcion.Size = new System.Drawing.Size(203, 32);
-            this.cb_dia_funcion.TabIndex = 21;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(495, 299);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(60, 24);
-            this.label22.TabIndex = 13;
-            this.label22.Text = "Hora:";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(182, 299);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(47, 24);
-            this.label21.TabIndex = 12;
-            this.label21.Text = "Día:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(426, 241);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(83, 24);
-            this.label20.TabIndex = 11;
-            this.label20.Text = "Horario:";
             // 
             // label19
             // 
@@ -876,11 +798,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.NumericUpDown cb_N_boletas;
-        private System.Windows.Forms.ComboBox cb_hora_funcion;
-        private System.Windows.Forms.ComboBox cb_dia_funcion;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label lbl_precio_total;
         private System.Windows.Forms.Label lbl_precio_unitario;
         private System.Windows.Forms.Label label26;
