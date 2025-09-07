@@ -13,23 +13,27 @@ namespace CapaDatos
             ConfigurationManager.ConnectionStrings["MiConexion"].ConnectionString;
 
         // Insertar Venta
-        public void InsertarVenta(int codigoPelicula, int cantidadBoletas, decimal valorUnitario, TimeSpan? horaFuncion = null)
+        public void InsertarVenta(int codigoPelicula, int cantidadBoletas, decimal? valorUnitario = null, TimeSpan? horaFuncion = null)
         {
             using (SqlConnection cn = new SqlConnection(cadena))
             {
-                SqlCommand comando = new SqlCommand("sp_InsertarVenta", cn);
-                comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.AddWithValue("@CodigoPelicula", codigoPelicula);
-                comando.Parameters.AddWithValue("@CantidadBoletas", cantidadBoletas);
-                comando.Parameters.AddWithValue("@ValorUnitario", valorUnitario);
+                SqlCommand cmd = new SqlCommand("sp_InsertarVenta", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@CodigoPelicula", codigoPelicula);
+                cmd.Parameters.AddWithValue("@CantidadBoletas", cantidadBoletas);
+
+                if (valorUnitario.HasValue)
+                    cmd.Parameters.AddWithValue("@ValorUnitario", valorUnitario.Value);
+                else
+                    cmd.Parameters.AddWithValue("@ValorUnitario", DBNull.Value);
 
                 if (horaFuncion.HasValue)
-                    comando.Parameters.AddWithValue("@HoraFuncion", horaFuncion.Value);
+                    cmd.Parameters.AddWithValue("@HoraFuncion", horaFuncion.Value);
                 else
-                    comando.Parameters.AddWithValue("@HoraFuncion", DBNull.Value);
+                    cmd.Parameters.AddWithValue("@HoraFuncion", DBNull.Value);
 
                 cn.Open();
-                comando.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
             }
         }//metodo
 

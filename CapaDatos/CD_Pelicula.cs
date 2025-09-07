@@ -12,35 +12,37 @@ namespace CapaDatos
             ConfigurationManager.ConnectionStrings["MiConexion"].ConnectionString;
 
         // Insertar Película
-        public void InsertarPelicula(string nombre, int duracion, string genero)
+        public void InsertarPelicula(string nombre, int duracion, string genero, decimal precioBoleta)
         {
             using (SqlConnection cn = new SqlConnection(cadena))
             {
-                SqlCommand comando = new SqlCommand("sp_InsertarPelicula", cn);
-                comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.AddWithValue("@Nombre", nombre);
-                comando.Parameters.AddWithValue("@Duracion", duracion);
-                comando.Parameters.AddWithValue("@Genero", genero);
+                SqlCommand cmd = new SqlCommand("sp_InsertarPelicula", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Nombre", nombre);
+                cmd.Parameters.AddWithValue("@Duracion", duracion);
+                cmd.Parameters.AddWithValue("@Genero", genero);
+                cmd.Parameters.AddWithValue("@PrecioBoleta", precioBoleta);
 
                 cn.Open();
-                comando.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
             }
         }
 
         // Actualizar Película
-        public void ActualizarPelicula(int codigo, string nombre, int duracion, string genero)
+        public void ActualizarPelicula(int codigo, string nombre, int duracion, string genero, decimal precioBoleta)
         {
             using (SqlConnection cn = new SqlConnection(cadena))
             {
-                SqlCommand comando = new SqlCommand("sp_ActualizarPelicula", cn);
-                comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.AddWithValue("@Codigo", codigo);
-                comando.Parameters.AddWithValue("@Nombre", nombre);
-                comando.Parameters.AddWithValue("@Duracion", duracion);
-                comando.Parameters.AddWithValue("@Genero", genero);
+                SqlCommand cmd = new SqlCommand("sp_ActualizarPelicula", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Codigo", codigo);
+                cmd.Parameters.AddWithValue("@Nombre", nombre);
+                cmd.Parameters.AddWithValue("@Duracion", duracion);
+                cmd.Parameters.AddWithValue("@Genero", genero);
+                cmd.Parameters.AddWithValue("@PrecioBoleta", precioBoleta);
 
                 cn.Open();
-                comando.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
             }
         }
 
