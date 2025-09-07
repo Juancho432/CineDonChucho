@@ -160,6 +160,8 @@ namespace CapaPresentacion
                     Precio = decimal.Parse(venta["PrecioBoleta"].ToString()),
                     Fecha = DateTime.Parse(venta["FechaHoraFuncion"].ToString())
                 }, int.Parse(cb_N_boletas.Value.ToString()));
+
+            MessageBox.Show("Venta Realizada");
         }
     }
 }
