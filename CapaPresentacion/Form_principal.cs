@@ -1,6 +1,7 @@
 ﻿
 using System.Windows.Forms;
 using System;
+using System.Data;
 using CapaNegocio;
 
 namespace CapaPresentacion
@@ -9,6 +10,8 @@ namespace CapaPresentacion
     {
 
         private readonly CN_Cine objCN = new CN_Cine();
+
+        private DataTable listadoPelicula;
 
         public Form_principal()
         {
@@ -125,6 +128,23 @@ namespace CapaPresentacion
             txt_precioBoleta_buscado.Text = string.Empty;
             timepicker_fecha_buscado.Value = DateTime.Today;
             timepicker_hora_buscado.Value = DateTime.Today;
+        }
+
+        private void Form_principal_Load(object sender, EventArgs e)
+        {
+            listadoPelicula = objCN.ListarPeliculas();
+            foreach (DataRow fila in listadoPelicula.Rows)
+            {
+                cb_pelicula_opciones.Items.Add(fila["Nombre"]?.ToString());
+            }
+        }
+
+        private void Cb_N_boletas_ValueChanged(object sender, EventArgs e)
+        {
+            decimal precio = decimal.Parse(
+                listadoPelicula.Rows[cb_pelicula_opciones.SelectedIndex]["Precio"].ToString());
+            lbl_precio_unitario.Text = precio.ToString();
+            lbl_precio_total.Text = (precio * cb_N_boletas.Value).ToString();
         }
     }
 }
