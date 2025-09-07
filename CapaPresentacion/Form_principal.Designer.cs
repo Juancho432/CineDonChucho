@@ -100,7 +100,7 @@
             this.tabControl1.Controls.Add(this.tabPage_ventas);
             this.tabControl1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(-2, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(760, 890);
@@ -126,9 +126,9 @@
             this.tabPage_registrar.Controls.Add(this.label2);
             this.tabPage_registrar.Controls.Add(this.label1);
             this.tabPage_registrar.Location = new System.Drawing.Point(4, 26);
-            this.tabPage_registrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_registrar.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage_registrar.Name = "tabPage_registrar";
-            this.tabPage_registrar.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_registrar.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage_registrar.Size = new System.Drawing.Size(752, 860);
             this.tabPage_registrar.TabIndex = 0;
             this.tabPage_registrar.Text = "Registrar";
@@ -138,7 +138,7 @@
             // 
             this.txt_precioBoleta.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_precioBoleta.Location = new System.Drawing.Point(284, 345);
-            this.txt_precioBoleta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_precioBoleta.Margin = new System.Windows.Forms.Padding(2);
             this.txt_precioBoleta.Multiline = true;
             this.txt_precioBoleta.Name = "txt_precioBoleta";
             this.txt_precioBoleta.Size = new System.Drawing.Size(188, 27);
@@ -159,7 +159,7 @@
             // 
             this.button_limpiar.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_limpiar.Location = new System.Drawing.Point(382, 514);
-            this.button_limpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_limpiar.Margin = new System.Windows.Forms.Padding(2);
             this.button_limpiar.Name = "button_limpiar";
             this.button_limpiar.Size = new System.Drawing.Size(101, 29);
             this.button_limpiar.TabIndex = 14;
@@ -171,7 +171,7 @@
             // 
             this.button_guardar.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_guardar.Location = new System.Drawing.Point(244, 514);
-            this.button_guardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_guardar.Margin = new System.Windows.Forms.Padding(2);
             this.button_guardar.Name = "button_guardar";
             this.button_guardar.Size = new System.Drawing.Size(81, 29);
             this.button_guardar.TabIndex = 13;
@@ -194,7 +194,7 @@
             // 
             this.datepicker_fecha.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datepicker_fecha.Location = new System.Drawing.Point(146, 445);
-            this.datepicker_fecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.datepicker_fecha.Margin = new System.Windows.Forms.Padding(2);
             this.datepicker_fecha.Name = "datepicker_fecha";
             this.datepicker_fecha.Size = new System.Drawing.Size(232, 25);
             this.datepicker_fecha.TabIndex = 11;
@@ -204,7 +204,7 @@
             this.timepicker_horaFuncion.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timepicker_horaFuncion.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.timepicker_horaFuncion.Location = new System.Drawing.Point(424, 445);
-            this.timepicker_horaFuncion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.timepicker_horaFuncion.Margin = new System.Windows.Forms.Padding(2);
             this.timepicker_horaFuncion.Name = "timepicker_horaFuncion";
             this.timepicker_horaFuncion.ShowUpDown = true;
             this.timepicker_horaFuncion.Size = new System.Drawing.Size(108, 25);
@@ -234,7 +234,7 @@
             "Romance",
             "Ciencia ficción"});
             this.cb_genero.Location = new System.Drawing.Point(284, 298);
-            this.cb_genero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cb_genero.Margin = new System.Windows.Forms.Padding(2);
             this.cb_genero.Name = "cb_genero";
             this.cb_genero.Size = new System.Drawing.Size(188, 27);
             this.cb_genero.TabIndex = 8;
@@ -243,7 +243,7 @@
             // 
             this.txt_duracion.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_duracion.Location = new System.Drawing.Point(284, 246);
-            this.txt_duracion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_duracion.Margin = new System.Windows.Forms.Padding(2);
             this.txt_duracion.Multiline = true;
             this.txt_duracion.Name = "txt_duracion";
             this.txt_duracion.Size = new System.Drawing.Size(188, 27);
@@ -253,7 +253,7 @@
             // 
             this.txt_nombre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nombre.Location = new System.Drawing.Point(284, 196);
-            this.txt_nombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_nombre.Margin = new System.Windows.Forms.Padding(2);
             this.txt_nombre.Multiline = true;
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(188, 27);
@@ -263,7 +263,7 @@
             // 
             this.txt_codigo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_codigo.Location = new System.Drawing.Point(284, 146);
-            this.txt_codigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_codigo.Margin = new System.Windows.Forms.Padding(2);
             this.txt_codigo.Multiline = true;
             this.txt_codigo.Name = "txt_codigo";
             this.txt_codigo.Size = new System.Drawing.Size(188, 27);
@@ -345,9 +345,9 @@
             this.tabPage_buscar.Controls.Add(this.label9);
             this.tabPage_buscar.Controls.Add(this.label8);
             this.tabPage_buscar.Location = new System.Drawing.Point(4, 26);
-            this.tabPage_buscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_buscar.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage_buscar.Name = "tabPage_buscar";
-            this.tabPage_buscar.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_buscar.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage_buscar.Size = new System.Drawing.Size(752, 860);
             this.tabPage_buscar.TabIndex = 1;
             this.tabPage_buscar.Text = "Buscar";
@@ -357,7 +357,7 @@
             // 
             this.button_limpiarB.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_limpiarB.Location = new System.Drawing.Point(387, 526);
-            this.button_limpiarB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_limpiarB.Margin = new System.Windows.Forms.Padding(2);
             this.button_limpiarB.Name = "button_limpiarB";
             this.button_limpiarB.Size = new System.Drawing.Size(68, 29);
             this.button_limpiarB.TabIndex = 27;
@@ -370,7 +370,7 @@
             this.txt_precioBoleta_buscado.Enabled = false;
             this.txt_precioBoleta_buscado.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_precioBoleta_buscado.Location = new System.Drawing.Point(317, 336);
-            this.txt_precioBoleta_buscado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_precioBoleta_buscado.Margin = new System.Windows.Forms.Padding(2);
             this.txt_precioBoleta_buscado.Multiline = true;
             this.txt_precioBoleta_buscado.Name = "txt_precioBoleta_buscado";
             this.txt_precioBoleta_buscado.Size = new System.Drawing.Size(188, 27);
@@ -403,7 +403,7 @@
             this.timepicker_fecha_buscado.Enabled = false;
             this.timepicker_fecha_buscado.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timepicker_fecha_buscado.Location = new System.Drawing.Point(164, 444);
-            this.timepicker_fecha_buscado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.timepicker_fecha_buscado.Margin = new System.Windows.Forms.Padding(2);
             this.timepicker_fecha_buscado.Name = "timepicker_fecha_buscado";
             this.timepicker_fecha_buscado.Size = new System.Drawing.Size(232, 25);
             this.timepicker_fecha_buscado.TabIndex = 23;
@@ -414,7 +414,7 @@
             this.timepicker_hora_buscado.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timepicker_hora_buscado.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.timepicker_hora_buscado.Location = new System.Drawing.Point(441, 444);
-            this.timepicker_hora_buscado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.timepicker_hora_buscado.Margin = new System.Windows.Forms.Padding(2);
             this.timepicker_hora_buscado.Name = "timepicker_hora_buscado";
             this.timepicker_hora_buscado.ShowUpDown = true;
             this.timepicker_hora_buscado.Size = new System.Drawing.Size(108, 25);
@@ -445,7 +445,7 @@
             "Romance",
             "Ciencia ficción"});
             this.comboBox_genero_buscado.Location = new System.Drawing.Point(318, 286);
-            this.comboBox_genero_buscado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox_genero_buscado.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_genero_buscado.Name = "comboBox_genero_buscado";
             this.comboBox_genero_buscado.Size = new System.Drawing.Size(188, 27);
             this.comboBox_genero_buscado.TabIndex = 20;
@@ -455,7 +455,7 @@
             this.txt_duracion_buscada.Enabled = false;
             this.txt_duracion_buscada.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_duracion_buscada.Location = new System.Drawing.Point(318, 234);
-            this.txt_duracion_buscada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_duracion_buscada.Margin = new System.Windows.Forms.Padding(2);
             this.txt_duracion_buscada.Multiline = true;
             this.txt_duracion_buscada.Name = "txt_duracion_buscada";
             this.txt_duracion_buscada.Size = new System.Drawing.Size(188, 27);
@@ -466,7 +466,7 @@
             this.txt_nombre_buscado.Enabled = false;
             this.txt_nombre_buscado.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nombre_buscado.Location = new System.Drawing.Point(318, 184);
-            this.txt_nombre_buscado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_nombre_buscado.Margin = new System.Windows.Forms.Padding(2);
             this.txt_nombre_buscado.Multiline = true;
             this.txt_nombre_buscado.Name = "txt_nombre_buscado";
             this.txt_nombre_buscado.Size = new System.Drawing.Size(188, 27);
@@ -498,7 +498,7 @@
             // 
             this.button_guardar_edicion.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_guardar_edicion.Location = new System.Drawing.Point(250, 526);
-            this.button_guardar_edicion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_guardar_edicion.Margin = new System.Windows.Forms.Padding(2);
             this.button_guardar_edicion.Name = "button_guardar_edicion";
             this.button_guardar_edicion.Size = new System.Drawing.Size(68, 29);
             this.button_guardar_edicion.TabIndex = 8;
@@ -511,7 +511,7 @@
             this.checkBox_editar.AutoSize = true;
             this.checkBox_editar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_editar.Location = new System.Drawing.Point(604, 261);
-            this.checkBox_editar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox_editar.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox_editar.Name = "checkBox_editar";
             this.checkBox_editar.Size = new System.Drawing.Size(74, 23);
             this.checkBox_editar.TabIndex = 7;
@@ -523,7 +523,7 @@
             // 
             this.txt_busqueda.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_busqueda.Location = new System.Drawing.Point(352, 101);
-            this.txt_busqueda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_busqueda.Margin = new System.Windows.Forms.Padding(2);
             this.txt_busqueda.Multiline = true;
             this.txt_busqueda.Name = "txt_busqueda";
             this.txt_busqueda.Size = new System.Drawing.Size(217, 27);
@@ -560,9 +560,9 @@
             this.tabPage_listar.Controls.Add(this.dgv_listado);
             this.tabPage_listar.Controls.Add(this.label11);
             this.tabPage_listar.Location = new System.Drawing.Point(4, 26);
-            this.tabPage_listar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_listar.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage_listar.Name = "tabPage_listar";
-            this.tabPage_listar.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_listar.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage_listar.Size = new System.Drawing.Size(752, 860);
             this.tabPage_listar.TabIndex = 2;
             this.tabPage_listar.Text = "Listar";
@@ -572,7 +572,7 @@
             // 
             this.txt_codigoListar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_codigoListar.Location = new System.Drawing.Point(394, 117);
-            this.txt_codigoListar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_codigoListar.Margin = new System.Windows.Forms.Padding(2);
             this.txt_codigoListar.Multiline = true;
             this.txt_codigoListar.Name = "txt_codigoListar";
             this.txt_codigoListar.Size = new System.Drawing.Size(217, 27);
@@ -599,7 +599,7 @@
             this.dgv_listado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_listado.Location = new System.Drawing.Point(58, 189);
-            this.dgv_listado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_listado.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_listado.Name = "dgv_listado";
             this.dgv_listado.RowHeadersVisible = false;
             this.dgv_listado.RowHeadersWidth = 51;
@@ -629,7 +629,7 @@
             this.tabPage_ventas.Controls.Add(this.cb_pelicula_opciones);
             this.tabPage_ventas.Controls.Add(this.label18);
             this.tabPage_ventas.Location = new System.Drawing.Point(4, 26);
-            this.tabPage_ventas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_ventas.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage_ventas.Name = "tabPage_ventas";
             this.tabPage_ventas.Size = new System.Drawing.Size(752, 860);
             this.tabPage_ventas.TabIndex = 3;
@@ -640,7 +640,7 @@
             // 
             this.button_confirmar_funcion.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_confirmar_funcion.Location = new System.Drawing.Point(316, 517);
-            this.button_confirmar_funcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_confirmar_funcion.Margin = new System.Windows.Forms.Padding(2);
             this.button_confirmar_funcion.Name = "button_confirmar_funcion";
             this.button_confirmar_funcion.Size = new System.Drawing.Size(92, 29);
             this.button_confirmar_funcion.TabIndex = 31;
@@ -655,9 +655,9 @@
             this.groupBox1.Controls.Add(this.lbl_precio_unitario);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(190, 318);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(334, 123);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
@@ -721,10 +721,11 @@
             // cb_N_boletas
             // 
             this.cb_N_boletas.Location = new System.Drawing.Point(348, 214);
-            this.cb_N_boletas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cb_N_boletas.Margin = new System.Windows.Forms.Padding(2);
             this.cb_N_boletas.Name = "cb_N_boletas";
             this.cb_N_boletas.Size = new System.Drawing.Size(90, 24);
             this.cb_N_boletas.TabIndex = 23;
+            this.cb_N_boletas.ValueChanged += new System.EventHandler(this.Cb_N_boletas_ValueChanged);
             // 
             // label19
             // 
@@ -741,7 +742,7 @@
             // 
             this.cb_pelicula_opciones.FormattingEnabled = true;
             this.cb_pelicula_opciones.Location = new System.Drawing.Point(348, 129);
-            this.cb_pelicula_opciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cb_pelicula_opciones.Margin = new System.Windows.Forms.Padding(2);
             this.cb_pelicula_opciones.Name = "cb_pelicula_opciones";
             this.cb_pelicula_opciones.Size = new System.Drawing.Size(189, 25);
             this.cb_pelicula_opciones.TabIndex = 9;
@@ -765,11 +766,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(759, 609);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cines Don Chucho";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_principal_FormClosed);
+            this.Load += new System.EventHandler(this.Form_principal_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage_registrar.ResumeLayout(false);
             this.tabPage_registrar.PerformLayout();
