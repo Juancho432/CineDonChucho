@@ -126,7 +126,7 @@ namespace CapaPresentacion
         private void Cb_N_boletas_ValueChanged(object sender, EventArgs e)
         {
             decimal precio = decimal.Parse(
-                listadoPelicula.Rows[cb_pelicula_opciones.SelectedIndex]["Precio"].ToString());
+                listadoPelicula.Rows[cb_pelicula_opciones.SelectedIndex]["PrecioBoleta"].ToString());
             lbl_precio_unitario.Text = precio.ToString();
             lbl_precio_total.Text = (precio * cb_N_boletas.Value).ToString();
         }
