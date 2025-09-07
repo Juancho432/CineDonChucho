@@ -110,11 +110,11 @@
             this.tabControl1.Controls.Add(this.tabPage_listar);
             this.tabControl1.Controls.Add(this.tabPage_ventas);
             this.tabControl1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(-2, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl1.Location = new System.Drawing.Point(-3, 0);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(760, 890);
+            this.tabControl1.Size = new System.Drawing.Size(1013, 1095);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage_registrar
@@ -136,11 +136,11 @@
             this.tabPage_registrar.Controls.Add(this.label3);
             this.tabPage_registrar.Controls.Add(this.label2);
             this.tabPage_registrar.Controls.Add(this.label1);
-            this.tabPage_registrar.Location = new System.Drawing.Point(4, 26);
-            this.tabPage_registrar.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage_registrar.Location = new System.Drawing.Point(4, 30);
+            this.tabPage_registrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage_registrar.Name = "tabPage_registrar";
-            this.tabPage_registrar.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage_registrar.Size = new System.Drawing.Size(752, 860);
+            this.tabPage_registrar.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage_registrar.Size = new System.Drawing.Size(1005, 1061);
             this.tabPage_registrar.TabIndex = 0;
             this.tabPage_registrar.Text = "Registrar";
             this.tabPage_registrar.UseVisualStyleBackColor = true;
@@ -148,31 +148,30 @@
             // txt_precioBoleta
             // 
             this.txt_precioBoleta.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_precioBoleta.Location = new System.Drawing.Point(284, 345);
-            this.txt_precioBoleta.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_precioBoleta.Location = new System.Drawing.Point(379, 425);
+            this.txt_precioBoleta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_precioBoleta.Multiline = true;
             this.txt_precioBoleta.Name = "txt_precioBoleta";
-            this.txt_precioBoleta.Size = new System.Drawing.Size(188, 27);
+            this.txt_precioBoleta.Size = new System.Drawing.Size(249, 32);
             this.txt_precioBoleta.TabIndex = 16;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(143, 352);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Location = new System.Drawing.Point(191, 433);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(106, 19);
+            this.label16.Size = new System.Drawing.Size(133, 24);
             this.label16.TabIndex = 15;
             this.label16.Text = "Precio boleta:";
             // 
             // button_limpiar
             // 
             this.button_limpiar.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_limpiar.Location = new System.Drawing.Point(382, 514);
-            this.button_limpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.button_limpiar.Location = new System.Drawing.Point(509, 633);
+            this.button_limpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_limpiar.Name = "button_limpiar";
-            this.button_limpiar.Size = new System.Drawing.Size(101, 29);
+            this.button_limpiar.Size = new System.Drawing.Size(135, 36);
             this.button_limpiar.TabIndex = 14;
             this.button_limpiar.Text = "Limpiar campos";
             this.button_limpiar.UseVisualStyleBackColor = true;
@@ -181,10 +180,10 @@
             // button_guardar
             // 
             this.button_guardar.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_guardar.Location = new System.Drawing.Point(244, 514);
-            this.button_guardar.Margin = new System.Windows.Forms.Padding(2);
+            this.button_guardar.Location = new System.Drawing.Point(325, 633);
+            this.button_guardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_guardar.Name = "button_guardar";
-            this.button_guardar.Size = new System.Drawing.Size(81, 29);
+            this.button_guardar.Size = new System.Drawing.Size(108, 36);
             this.button_guardar.TabIndex = 13;
             this.button_guardar.Text = "Guardar";
             this.button_guardar.UseVisualStyleBackColor = true;
@@ -194,41 +193,39 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(143, 396);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(191, 487);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(184, 19);
+            this.label7.Size = new System.Drawing.Size(229, 24);
             this.label7.TabIndex = 12;
             this.label7.Text = "Día y hora de la función:";
             // 
             // datepicker_fecha
             // 
             this.datepicker_fecha.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datepicker_fecha.Location = new System.Drawing.Point(146, 445);
-            this.datepicker_fecha.Margin = new System.Windows.Forms.Padding(2);
+            this.datepicker_fecha.Location = new System.Drawing.Point(195, 548);
+            this.datepicker_fecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datepicker_fecha.Name = "datepicker_fecha";
-            this.datepicker_fecha.Size = new System.Drawing.Size(232, 25);
+            this.datepicker_fecha.Size = new System.Drawing.Size(308, 29);
             this.datepicker_fecha.TabIndex = 11;
             // 
             // timepicker_horaFuncion
             // 
             this.timepicker_horaFuncion.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timepicker_horaFuncion.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.timepicker_horaFuncion.Location = new System.Drawing.Point(424, 445);
-            this.timepicker_horaFuncion.Margin = new System.Windows.Forms.Padding(2);
+            this.timepicker_horaFuncion.Location = new System.Drawing.Point(565, 548);
+            this.timepicker_horaFuncion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.timepicker_horaFuncion.Name = "timepicker_horaFuncion";
             this.timepicker_horaFuncion.ShowUpDown = true;
-            this.timepicker_horaFuncion.Size = new System.Drawing.Size(108, 25);
+            this.timepicker_horaFuncion.Size = new System.Drawing.Size(143, 29);
             this.timepicker_horaFuncion.TabIndex = 10;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(143, 305);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(191, 375);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 19);
+            this.label6.Size = new System.Drawing.Size(81, 24);
             this.label6.TabIndex = 9;
             this.label6.Text = "Género:";
             // 
@@ -244,51 +241,49 @@
             "Terror",
             "Romance",
             "Ciencia ficción"});
-            this.cb_genero.Location = new System.Drawing.Point(284, 298);
-            this.cb_genero.Margin = new System.Windows.Forms.Padding(2);
+            this.cb_genero.Location = new System.Drawing.Point(379, 367);
+            this.cb_genero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_genero.Name = "cb_genero";
-            this.cb_genero.Size = new System.Drawing.Size(188, 27);
+            this.cb_genero.Size = new System.Drawing.Size(249, 32);
             this.cb_genero.TabIndex = 8;
             // 
             // txt_duracion
             // 
             this.txt_duracion.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_duracion.Location = new System.Drawing.Point(284, 246);
-            this.txt_duracion.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_duracion.Location = new System.Drawing.Point(379, 303);
+            this.txt_duracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_duracion.Multiline = true;
             this.txt_duracion.Name = "txt_duracion";
-            this.txt_duracion.Size = new System.Drawing.Size(188, 27);
+            this.txt_duracion.Size = new System.Drawing.Size(249, 32);
             this.txt_duracion.TabIndex = 7;
             // 
             // txt_nombre
             // 
             this.txt_nombre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombre.Location = new System.Drawing.Point(284, 196);
-            this.txt_nombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_nombre.Location = new System.Drawing.Point(379, 241);
+            this.txt_nombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_nombre.Multiline = true;
             this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(188, 27);
+            this.txt_nombre.Size = new System.Drawing.Size(249, 32);
             this.txt_nombre.TabIndex = 6;
             // 
             // txt_codigo
             // 
             this.txt_codigo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_codigo.Location = new System.Drawing.Point(284, 146);
-            this.txt_codigo.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_codigo.Location = new System.Drawing.Point(379, 180);
+            this.txt_codigo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_codigo.Multiline = true;
             this.txt_codigo.Name = "txt_codigo";
-            this.txt_codigo.Size = new System.Drawing.Size(188, 27);
+            this.txt_codigo.Size = new System.Drawing.Size(249, 32);
             this.txt_codigo.TabIndex = 5;
-            this.txt_codigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_codigo_KeyPress);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(142, 253);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(189, 311);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 19);
+            this.label5.Size = new System.Drawing.Size(151, 24);
             this.label5.TabIndex = 4;
             this.label5.Text = "Duración (min):";
             // 
@@ -296,10 +291,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(143, 202);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(191, 249);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 19);
+            this.label4.Size = new System.Drawing.Size(87, 24);
             this.label4.TabIndex = 3;
             this.label4.Text = "Nombre:";
             // 
@@ -307,10 +301,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(143, 153);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(191, 188);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 19);
+            this.label3.Size = new System.Drawing.Size(78, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "Código:";
             // 
@@ -318,10 +311,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(229, 100);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(305, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(271, 19);
+            this.label2.Size = new System.Drawing.Size(340, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Ingrese la información de la película:";
             // 
@@ -330,10 +322,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label1.Location = new System.Drawing.Point(256, 42);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(341, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 33);
+            this.label1.Size = new System.Drawing.Size(276, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Registrar película ";
             // 
@@ -355,11 +346,11 @@
             this.tabPage_buscar.Controls.Add(this.txt_busqueda);
             this.tabPage_buscar.Controls.Add(this.label9);
             this.tabPage_buscar.Controls.Add(this.label8);
-            this.tabPage_buscar.Location = new System.Drawing.Point(4, 26);
-            this.tabPage_buscar.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage_buscar.Location = new System.Drawing.Point(4, 30);
+            this.tabPage_buscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage_buscar.Name = "tabPage_buscar";
-            this.tabPage_buscar.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage_buscar.Size = new System.Drawing.Size(752, 860);
+            this.tabPage_buscar.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage_buscar.Size = new System.Drawing.Size(1005, 1061);
             this.tabPage_buscar.TabIndex = 1;
             this.tabPage_buscar.Text = "Buscar";
             this.tabPage_buscar.UseVisualStyleBackColor = true;
@@ -368,21 +359,20 @@
             // 
             this.txt_precioBoleta_buscado.Enabled = false;
             this.txt_precioBoleta_buscado.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_precioBoleta_buscado.Location = new System.Drawing.Point(317, 336);
-            this.txt_precioBoleta_buscado.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_precioBoleta_buscado.Location = new System.Drawing.Point(423, 414);
+            this.txt_precioBoleta_buscado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_precioBoleta_buscado.Multiline = true;
             this.txt_precioBoleta_buscado.Name = "txt_precioBoleta_buscado";
-            this.txt_precioBoleta_buscado.Size = new System.Drawing.Size(188, 27);
+            this.txt_precioBoleta_buscado.Size = new System.Drawing.Size(249, 32);
             this.txt_precioBoleta_buscado.TabIndex = 26;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(176, 343);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Location = new System.Drawing.Point(235, 422);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(106, 19);
+            this.label17.Size = new System.Drawing.Size(133, 24);
             this.label17.TabIndex = 25;
             this.label17.Text = "Precio boleta:";
             // 
@@ -390,10 +380,9 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(177, 399);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(236, 491);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(184, 19);
+            this.label12.Size = new System.Drawing.Size(229, 24);
             this.label12.TabIndex = 24;
             this.label12.Text = "Día y hora de la función:";
             // 
@@ -401,10 +390,10 @@
             // 
             this.timepicker_fecha_buscado.Enabled = false;
             this.timepicker_fecha_buscado.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timepicker_fecha_buscado.Location = new System.Drawing.Point(164, 444);
-            this.timepicker_fecha_buscado.Margin = new System.Windows.Forms.Padding(2);
+            this.timepicker_fecha_buscado.Location = new System.Drawing.Point(219, 546);
+            this.timepicker_fecha_buscado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.timepicker_fecha_buscado.Name = "timepicker_fecha_buscado";
-            this.timepicker_fecha_buscado.Size = new System.Drawing.Size(232, 25);
+            this.timepicker_fecha_buscado.Size = new System.Drawing.Size(308, 29);
             this.timepicker_fecha_buscado.TabIndex = 23;
             // 
             // timepicker_hora_buscado
@@ -412,21 +401,20 @@
             this.timepicker_hora_buscado.Enabled = false;
             this.timepicker_hora_buscado.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timepicker_hora_buscado.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.timepicker_hora_buscado.Location = new System.Drawing.Point(441, 444);
-            this.timepicker_hora_buscado.Margin = new System.Windows.Forms.Padding(2);
+            this.timepicker_hora_buscado.Location = new System.Drawing.Point(588, 546);
+            this.timepicker_hora_buscado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.timepicker_hora_buscado.Name = "timepicker_hora_buscado";
             this.timepicker_hora_buscado.ShowUpDown = true;
-            this.timepicker_hora_buscado.Size = new System.Drawing.Size(108, 25);
+            this.timepicker_hora_buscado.Size = new System.Drawing.Size(143, 29);
             this.timepicker_hora_buscado.TabIndex = 22;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(177, 292);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(236, 359);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(66, 19);
+            this.label13.Size = new System.Drawing.Size(81, 24);
             this.label13.TabIndex = 21;
             this.label13.Text = "Género:";
             // 
@@ -443,42 +431,41 @@
             "Terror",
             "Romance",
             "Ciencia ficción"});
-            this.comboBox_genero_buscado.Location = new System.Drawing.Point(318, 286);
-            this.comboBox_genero_buscado.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_genero_buscado.Location = new System.Drawing.Point(424, 352);
+            this.comboBox_genero_buscado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox_genero_buscado.Name = "comboBox_genero_buscado";
-            this.comboBox_genero_buscado.Size = new System.Drawing.Size(188, 27);
+            this.comboBox_genero_buscado.Size = new System.Drawing.Size(249, 32);
             this.comboBox_genero_buscado.TabIndex = 20;
             // 
             // txt_duracion_buscada
             // 
             this.txt_duracion_buscada.Enabled = false;
             this.txt_duracion_buscada.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_duracion_buscada.Location = new System.Drawing.Point(318, 234);
-            this.txt_duracion_buscada.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_duracion_buscada.Location = new System.Drawing.Point(424, 288);
+            this.txt_duracion_buscada.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_duracion_buscada.Multiline = true;
             this.txt_duracion_buscada.Name = "txt_duracion_buscada";
-            this.txt_duracion_buscada.Size = new System.Drawing.Size(188, 27);
+            this.txt_duracion_buscada.Size = new System.Drawing.Size(249, 32);
             this.txt_duracion_buscada.TabIndex = 19;
             // 
             // txt_nombre_buscado
             // 
             this.txt_nombre_buscado.Enabled = false;
             this.txt_nombre_buscado.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombre_buscado.Location = new System.Drawing.Point(318, 184);
-            this.txt_nombre_buscado.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_nombre_buscado.Location = new System.Drawing.Point(424, 226);
+            this.txt_nombre_buscado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_nombre_buscado.Multiline = true;
             this.txt_nombre_buscado.Name = "txt_nombre_buscado";
-            this.txt_nombre_buscado.Size = new System.Drawing.Size(188, 27);
+            this.txt_nombre_buscado.Size = new System.Drawing.Size(249, 32);
             this.txt_nombre_buscado.TabIndex = 18;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(176, 240);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(235, 295);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(122, 19);
+            this.label14.Size = new System.Drawing.Size(151, 24);
             this.label14.TabIndex = 16;
             this.label14.Text = "Duración (min):";
             // 
@@ -486,32 +473,32 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(177, 190);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Location = new System.Drawing.Point(236, 234);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(72, 19);
+            this.label15.Size = new System.Drawing.Size(87, 24);
             this.label15.TabIndex = 15;
             this.label15.Text = "Nombre:";
             // 
             // button_guardar_edicion
             // 
             this.button_guardar_edicion.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_guardar_edicion.Location = new System.Drawing.Point(327, 542);
-            this.button_guardar_edicion.Margin = new System.Windows.Forms.Padding(2);
+            this.button_guardar_edicion.Location = new System.Drawing.Point(436, 667);
+            this.button_guardar_edicion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_guardar_edicion.Name = "button_guardar_edicion";
-            this.button_guardar_edicion.Size = new System.Drawing.Size(68, 29);
+            this.button_guardar_edicion.Size = new System.Drawing.Size(91, 36);
             this.button_guardar_edicion.TabIndex = 8;
             this.button_guardar_edicion.Text = "Guardar";
             this.button_guardar_edicion.UseVisualStyleBackColor = true;
+            this.button_guardar_edicion.Click += new System.EventHandler(this.Button_guardar_edicion_Click);
             // 
             // checkBox_editar
             // 
             this.checkBox_editar.AutoSize = true;
             this.checkBox_editar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_editar.Location = new System.Drawing.Point(604, 261);
-            this.checkBox_editar.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox_editar.Location = new System.Drawing.Point(805, 321);
+            this.checkBox_editar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox_editar.Name = "checkBox_editar";
-            this.checkBox_editar.Size = new System.Drawing.Size(74, 23);
+            this.checkBox_editar.Size = new System.Drawing.Size(90, 28);
             this.checkBox_editar.TabIndex = 7;
             this.checkBox_editar.Text = "Editar ";
             this.checkBox_editar.UseVisualStyleBackColor = true;
@@ -520,11 +507,11 @@
             // txt_busqueda
             // 
             this.txt_busqueda.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_busqueda.Location = new System.Drawing.Point(352, 101);
-            this.txt_busqueda.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_busqueda.Location = new System.Drawing.Point(469, 124);
+            this.txt_busqueda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_busqueda.Multiline = true;
             this.txt_busqueda.Name = "txt_busqueda";
-            this.txt_busqueda.Size = new System.Drawing.Size(217, 27);
+            this.txt_busqueda.Size = new System.Drawing.Size(288, 32);
             this.txt_busqueda.TabIndex = 6;
             this.txt_busqueda.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_busqueda_KeyPress);
             // 
@@ -532,10 +519,9 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(112, 107);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(149, 132);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(234, 19);
+            this.label9.Size = new System.Drawing.Size(294, 24);
             this.label9.TabIndex = 3;
             this.label9.Text = "Ingrese el código de la película:";
             // 
@@ -544,10 +530,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label8.Location = new System.Drawing.Point(256, 42);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(341, 52);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(198, 33);
+            this.label8.Size = new System.Drawing.Size(242, 40);
             this.label8.TabIndex = 1;
             this.label8.Text = "Buscar película ";
             // 
@@ -557,11 +542,11 @@
             this.tabPage_listar.Controls.Add(this.label10);
             this.tabPage_listar.Controls.Add(this.dgv_listado);
             this.tabPage_listar.Controls.Add(this.label11);
-            this.tabPage_listar.Location = new System.Drawing.Point(4, 26);
-            this.tabPage_listar.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage_listar.Location = new System.Drawing.Point(4, 30);
+            this.tabPage_listar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage_listar.Name = "tabPage_listar";
-            this.tabPage_listar.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage_listar.Size = new System.Drawing.Size(752, 860);
+            this.tabPage_listar.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage_listar.Size = new System.Drawing.Size(1005, 1061);
             this.tabPage_listar.TabIndex = 2;
             this.tabPage_listar.Text = "Listar";
             this.tabPage_listar.UseVisualStyleBackColor = true;
@@ -569,11 +554,11 @@
             // txt_codigoListar
             // 
             this.txt_codigoListar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_codigoListar.Location = new System.Drawing.Point(394, 117);
-            this.txt_codigoListar.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_codigoListar.Location = new System.Drawing.Point(525, 144);
+            this.txt_codigoListar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_codigoListar.Multiline = true;
             this.txt_codigoListar.Name = "txt_codigoListar";
-            this.txt_codigoListar.Size = new System.Drawing.Size(217, 27);
+            this.txt_codigoListar.Size = new System.Drawing.Size(288, 32);
             this.txt_codigoListar.TabIndex = 10;
             this.txt_codigoListar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_codigoListar_KeyPress);
             // 
@@ -581,10 +566,9 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(104, 124);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(139, 153);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(291, 19);
+            this.label10.Size = new System.Drawing.Size(363, 24);
             this.label10.TabIndex = 9;
             this.label10.Text = "Ingrese código o nombre de la película:";
             // 
@@ -604,13 +588,13 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6,
             this.Column_precio});
-            this.dgv_listado.Location = new System.Drawing.Point(58, 189);
-            this.dgv_listado.Margin = new System.Windows.Forms.Padding(2);
+            this.dgv_listado.Location = new System.Drawing.Point(77, 233);
+            this.dgv_listado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgv_listado.Name = "dgv_listado";
             this.dgv_listado.RowHeadersVisible = false;
             this.dgv_listado.RowHeadersWidth = 51;
             this.dgv_listado.RowTemplate.Height = 24;
-            this.dgv_listado.Size = new System.Drawing.Size(641, 295);
+            this.dgv_listado.Size = new System.Drawing.Size(855, 363);
             this.dgv_listado.TabIndex = 8;
             // 
             // dataGridViewTextBoxColumn1
@@ -660,10 +644,9 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label11.Location = new System.Drawing.Point(249, 42);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(332, 52);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(244, 33);
+            this.label11.Size = new System.Drawing.Size(299, 40);
             this.label11.TabIndex = 7;
             this.label11.Text = "Listado de películas";
             // 
@@ -681,10 +664,10 @@
             this.tabPage_ventas.Controls.Add(this.label19);
             this.tabPage_ventas.Controls.Add(this.cb_pelicula_opciones);
             this.tabPage_ventas.Controls.Add(this.label18);
-            this.tabPage_ventas.Location = new System.Drawing.Point(4, 26);
-            this.tabPage_ventas.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage_ventas.Location = new System.Drawing.Point(4, 30);
+            this.tabPage_ventas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage_ventas.Name = "tabPage_ventas";
-            this.tabPage_ventas.Size = new System.Drawing.Size(752, 860);
+            this.tabPage_ventas.Size = new System.Drawing.Size(1005, 1061);
             this.tabPage_ventas.TabIndex = 3;
             this.tabPage_ventas.Text = "Ventas";
             this.tabPage_ventas.UseVisualStyleBackColor = true;
@@ -692,10 +675,10 @@
             // button_confirmar_funcion
             // 
             this.button_confirmar_funcion.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_confirmar_funcion.Location = new System.Drawing.Point(323, 688);
-            this.button_confirmar_funcion.Margin = new System.Windows.Forms.Padding(2);
+            this.button_confirmar_funcion.Location = new System.Drawing.Point(431, 847);
+            this.button_confirmar_funcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_confirmar_funcion.Name = "button_confirmar_funcion";
-            this.button_confirmar_funcion.Size = new System.Drawing.Size(92, 29);
+            this.button_confirmar_funcion.Size = new System.Drawing.Size(123, 36);
             this.button_confirmar_funcion.TabIndex = 31;
             this.button_confirmar_funcion.Text = "Confirmar";
             this.button_confirmar_funcion.UseVisualStyleBackColor = true;
@@ -707,11 +690,11 @@
             this.groupBox1.Controls.Add(this.label26);
             this.groupBox1.Controls.Add(this.lbl_precio_unitario);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(201, 498);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(268, 613);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(334, 123);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(445, 151);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Resumen de la compra";
@@ -720,10 +703,9 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(78, 44);
-            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label25.Location = new System.Drawing.Point(104, 54);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(117, 19);
+            this.label25.Size = new System.Drawing.Size(145, 24);
             this.label25.TabIndex = 26;
             this.label25.Text = "Precio unitario:";
             // 
@@ -731,10 +713,9 @@
             // 
             this.lbl_precio_total.AutoSize = true;
             this.lbl_precio_total.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_precio_total.Location = new System.Drawing.Point(232, 82);
-            this.lbl_precio_total.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_precio_total.Location = new System.Drawing.Point(309, 101);
             this.lbl_precio_total.Name = "lbl_precio_total";
-            this.lbl_precio_total.Size = new System.Drawing.Size(27, 19);
+            this.lbl_precio_total.Size = new System.Drawing.Size(31, 24);
             this.lbl_precio_total.TabIndex = 29;
             this.lbl_precio_total.Text = "---";
             // 
@@ -742,10 +723,9 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(84, 82);
-            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label26.Location = new System.Drawing.Point(112, 101);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(109, 19);
+            this.label26.Size = new System.Drawing.Size(137, 24);
             this.label26.TabIndex = 27;
             this.label26.Text = "Total a pagar:";
             // 
@@ -753,10 +733,9 @@
             // 
             this.lbl_precio_unitario.AutoSize = true;
             this.lbl_precio_unitario.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_precio_unitario.Location = new System.Drawing.Point(232, 44);
-            this.lbl_precio_unitario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_precio_unitario.Location = new System.Drawing.Point(309, 54);
             this.lbl_precio_unitario.Name = "lbl_precio_unitario";
-            this.lbl_precio_unitario.Size = new System.Drawing.Size(27, 19);
+            this.lbl_precio_unitario.Size = new System.Drawing.Size(31, 24);
             this.lbl_precio_unitario.TabIndex = 28;
             this.lbl_precio_unitario.Text = "---";
             // 
@@ -764,19 +743,18 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(277, 384);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Location = new System.Drawing.Point(369, 473);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(154, 19);
+            this.label23.Size = new System.Drawing.Size(195, 24);
             this.label23.TabIndex = 24;
             this.label23.Text = "Cantidad de boletas:";
             // 
             // cb_N_boletas
             // 
-            this.cb_N_boletas.Location = new System.Drawing.Point(309, 418);
-            this.cb_N_boletas.Margin = new System.Windows.Forms.Padding(2);
+            this.cb_N_boletas.Location = new System.Drawing.Point(412, 514);
+            this.cb_N_boletas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_N_boletas.Name = "cb_N_boletas";
-            this.cb_N_boletas.Size = new System.Drawing.Size(90, 24);
+            this.cb_N_boletas.Size = new System.Drawing.Size(120, 28);
             this.cb_N_boletas.TabIndex = 23;
             // 
             // cb_hora_funcion
@@ -792,10 +770,10 @@
             "Terror",
             "Romance",
             "Ciencia ficción"});
-            this.cb_hora_funcion.Location = new System.Drawing.Point(299, 310);
-            this.cb_hora_funcion.Margin = new System.Windows.Forms.Padding(2);
+            this.cb_hora_funcion.Location = new System.Drawing.Point(399, 382);
+            this.cb_hora_funcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_hora_funcion.Name = "cb_hora_funcion";
-            this.cb_hora_funcion.Size = new System.Drawing.Size(153, 27);
+            this.cb_hora_funcion.Size = new System.Drawing.Size(203, 32);
             this.cb_hora_funcion.TabIndex = 22;
             // 
             // cb_dia_funcion
@@ -811,20 +789,19 @@
             "Terror",
             "Romance",
             "Ciencia ficción"});
-            this.cb_dia_funcion.Location = new System.Drawing.Point(299, 258);
-            this.cb_dia_funcion.Margin = new System.Windows.Forms.Padding(2);
+            this.cb_dia_funcion.Location = new System.Drawing.Point(399, 318);
+            this.cb_dia_funcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_dia_funcion.Name = "cb_dia_funcion";
-            this.cb_dia_funcion.Size = new System.Drawing.Size(153, 27);
+            this.cb_dia_funcion.Size = new System.Drawing.Size(203, 32);
             this.cb_dia_funcion.TabIndex = 21;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(236, 316);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Location = new System.Drawing.Point(315, 389);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(49, 19);
+            this.label22.Size = new System.Drawing.Size(60, 24);
             this.label22.TabIndex = 13;
             this.label22.Text = "Hora:";
             // 
@@ -832,10 +809,9 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(236, 264);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Location = new System.Drawing.Point(315, 325);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(38, 19);
+            this.label21.Size = new System.Drawing.Size(47, 24);
             this.label21.TabIndex = 12;
             this.label21.Text = "Día:";
             // 
@@ -843,10 +819,9 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(320, 217);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Location = new System.Drawing.Point(427, 267);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(68, 19);
+            this.label20.Size = new System.Drawing.Size(83, 24);
             this.label20.TabIndex = 11;
             this.label20.Text = "Horario:";
             // 
@@ -854,20 +829,19 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(269, 124);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Location = new System.Drawing.Point(359, 153);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(177, 19);
+            this.label19.Size = new System.Drawing.Size(224, 24);
             this.label19.TabIndex = 10;
             this.label19.Text = "Seleccione una película:";
             // 
             // cb_pelicula_opciones
             // 
             this.cb_pelicula_opciones.FormattingEnabled = true;
-            this.cb_pelicula_opciones.Location = new System.Drawing.Point(260, 160);
-            this.cb_pelicula_opciones.Margin = new System.Windows.Forms.Padding(2);
+            this.cb_pelicula_opciones.Location = new System.Drawing.Point(347, 197);
+            this.cb_pelicula_opciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_pelicula_opciones.Name = "cb_pelicula_opciones";
-            this.cb_pelicula_opciones.Size = new System.Drawing.Size(189, 25);
+            this.cb_pelicula_opciones.Size = new System.Drawing.Size(251, 29);
             this.cb_pelicula_opciones.TabIndex = 9;
             this.cb_pelicula_opciones.Tag = "";
             // 
@@ -876,20 +850,19 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label18.Location = new System.Drawing.Point(294, 42);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Location = new System.Drawing.Point(392, 52);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(133, 33);
+            this.label18.Size = new System.Drawing.Size(161, 40);
             this.label18.TabIndex = 8;
             this.label18.Text = "Funciones";
             // 
             // Form_principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(759, 609);
+            this.ClientSize = new System.Drawing.Size(1012, 750);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form_principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cines Don Chucho";

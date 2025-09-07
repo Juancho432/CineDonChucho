@@ -32,6 +32,12 @@ namespace CapaNegocio
         {
             return objCDPelicula.ListarPeliculas();
         }
+    
+        public void ActualizarPelicula(string codigo, string nombre, string duracion, string genero)
+        {
+            objCDPelicula.ActualizarPelicula(int.Parse(codigo), nombre, 
+                                             int.Parse(duracion), genero);
+        }
     }
 
     public struct Pelicula

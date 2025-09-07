@@ -81,13 +81,16 @@ namespace CapaPresentacion
             }
         }
 
-        private void Txt_codigo_KeyPress(object sender, KeyPressEventArgs e)
+        private void Button_guardar_edicion_Click(object sender, EventArgs e)
         {
-            if (e.KeyChar == (char)Keys.Enter)
+            if (checkBox_editar.Checked == true)
             {
-                Pelicula result = objCN.BuscarPelicula(txt_codigo.Text);
-                txt_nombre.Text = result.Nombre;
-                txt_nombre.Enabled = !txt_nombre.Enabled;
+                objCN.ActualizarPelicula(txt_busqueda.Text, txt_nombre_buscado.Text,
+                                         txt_duracion_buscada.Text, comboBox_genero_buscado.Text);
+            }
+            else
+            {
+                MessageBox.Show("No se ha activado la edicion");
             }
         }
     }
