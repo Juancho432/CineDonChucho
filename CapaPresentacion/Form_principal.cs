@@ -91,15 +91,31 @@ namespace CapaPresentacion
 
         private void Button_guardar_edicion_Click(object sender, EventArgs e)
         {
-            if (checkBox_editar.Checked == true)
+            if (checkBox_editar.Checked)
             {
-                objCN.ActualizarPelicula(txt_busqueda.Text, txt_nombre_buscado.Text,
-                    txt_duracion_buscada.Text, comboBox_genero_buscado.Text, txt_precioBoleta_buscado.Text,
-                    timepicker_fecha_buscado.Value.Add(timepicker_hora_buscado.Value.TimeOfDay));
+                if (int.TryParse(txt_busqueda.Text, out int codigo) &&
+                    int.TryParse(txt_duracion_buscada.Text, out int duracion) &&
+                    decimal.TryParse(txt_precioBoleta_buscado.Text, out decimal precio))
+                {
+                    objCN.ActualizarPelicula(
+                        codigo,
+                        txt_nombre_buscado.Text,
+                        duracion,
+                        comboBox_genero_buscado.Text,
+                        precio,
+                        timepicker_fecha_buscado.Value.Add(timepicker_hora_buscado.Value.TimeOfDay)
+                    );
+
+                    MessageBox.Show("Película actualizada con éxito");
+                }
+                else
+                {
+                    MessageBox.Show("Error: Verifica los campos numéricos (Código, Duración, Precio).");
+                }
             }
             else
             {
-                MessageBox.Show("No se ha activado la edicion");
+                MessageBox.Show("No se ha activado la edición");
             }
         }
 
