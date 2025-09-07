@@ -81,6 +81,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.cb_pelicula_opciones = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
+            this.button_limpiarB = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage_registrar.SuspendLayout();
             this.tabPage_buscar.SuspendLayout();
@@ -318,6 +319,7 @@
             // 
             // tabPage_buscar
             // 
+            this.tabPage_buscar.Controls.Add(this.button_limpiarB);
             this.tabPage_buscar.Controls.Add(this.txt_precioBoleta_buscado);
             this.tabPage_buscar.Controls.Add(this.label17);
             this.tabPage_buscar.Controls.Add(this.label12);
@@ -470,7 +472,7 @@
             // button_guardar_edicion
             // 
             this.button_guardar_edicion.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_guardar_edicion.Location = new System.Drawing.Point(436, 638);
+            this.button_guardar_edicion.Location = new System.Drawing.Point(333, 647);
             this.button_guardar_edicion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_guardar_edicion.Name = "button_guardar_edicion";
             this.button_guardar_edicion.Size = new System.Drawing.Size(91, 36);
@@ -721,6 +723,17 @@
             this.label18.TabIndex = 8;
             this.label18.Text = "Funciones";
             // 
+            // button_limpiarB
+            // 
+            this.button_limpiarB.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_limpiarB.Location = new System.Drawing.Point(516, 647);
+            this.button_limpiarB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_limpiarB.Name = "button_limpiarB";
+            this.button_limpiarB.Size = new System.Drawing.Size(91, 36);
+            this.button_limpiarB.TabIndex = 27;
+            this.button_limpiarB.Text = "Limpiar";
+            this.button_limpiarB.UseVisualStyleBackColor = true;
+            // 
             // Form_principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -804,5 +817,6 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button_confirmar_funcion;
+        private System.Windows.Forms.Button button_limpiarB;
     }
 }
