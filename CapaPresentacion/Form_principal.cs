@@ -99,5 +99,16 @@ namespace CapaPresentacion
                 MessageBox.Show("No se ha activado la edicion");
             }
         }
+
+        private void Button_limpiarB_Click(object sender, EventArgs e)
+        {
+            txt_busqueda.Text = string.Empty;
+            txt_nombre_buscado.Text = string.Empty;
+            txt_duracion_buscada.Text = string.Empty;
+            comboBox_genero_buscado.Text = string.Empty;
+            txt_precioBoleta_buscado.Text = string.Empty;
+            timepicker_fecha_buscado.Value = DateTime.Today;
+            timepicker_hora_buscado.Value = DateTime.Today;
+        }
     }
 }
