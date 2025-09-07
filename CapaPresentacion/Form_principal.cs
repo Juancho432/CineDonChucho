@@ -146,5 +146,20 @@ namespace CapaPresentacion
             lbl_precio_unitario.Text = precio.ToString();
             lbl_precio_total.Text = (precio * cb_N_boletas.Value).ToString();
         }
+
+        private void Button_confirmar_funcion_Click(object sender, EventArgs e)
+        {
+            DataRow venta = listadoPelicula.Rows[cb_pelicula_opciones.SelectedIndex];
+            objCN.VenderBoletas(
+                new Pelicula
+                {
+                    Codigo = venta["Codigo"].ToString(),
+                    Nombre = venta["Nombre"].ToString(),
+                    Duracion = uint.Parse(venta["Duracion"].ToString()),
+                    Genero = venta["Genero"].ToString(),
+                    Precio = decimal.Parse(venta["PrecioBoleta"].ToString()),
+                    Fecha = DateTime.Parse(venta["FechaHoraFuncion"].ToString())
+                }, int.Parse(cb_N_boletas.Value.ToString()));
+        }
     }
 }

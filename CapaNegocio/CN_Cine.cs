@@ -10,6 +10,7 @@ namespace CapaNegocio
     {
 
         private readonly CD_Pelicula objCDPelicula = new CD_Pelicula();
+        private readonly CD_Venta objCDVenta = new CD_Venta();
 
         public Pelicula BuscarPelicula(string codigo)
         {
@@ -41,6 +42,11 @@ namespace CapaNegocio
         {
             objCDPelicula.ActualizarPelicula(codigo, nombre,
                 duracion, genero, precio, fecha);
+        }
+
+        public void VenderBoletas(Pelicula pelicula, int cantidad)
+        {
+            objCDVenta.InsertarVenta(int.Parse(pelicula.Codigo), cantidad, pelicula.Precio, pelicula.Fecha);
         }
     }
 

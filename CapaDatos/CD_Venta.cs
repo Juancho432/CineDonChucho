@@ -12,7 +12,7 @@ namespace CapaDatos
             ConfigurationManager.ConnectionStrings["MiConexion"].ConnectionString;
 
         // Insertar Venta
-        public void InsertarVenta(int codigoPelicula, int cantidadBoletas, decimal valorUnitario, TimeSpan? horaFuncion = null)
+        public void InsertarVenta(int codigoPelicula, int cantidadBoletas, decimal valorUnitario, DateTime? horaFuncion = null)
         {
             using (SqlConnection cn = new SqlConnection(cadena))
             {

@@ -646,6 +646,7 @@
             this.button_confirmar_funcion.TabIndex = 31;
             this.button_confirmar_funcion.Text = "Confirmar";
             this.button_confirmar_funcion.UseVisualStyleBackColor = true;
+            this.button_confirmar_funcion.Click += new System.EventHandler(this.Button_confirmar_funcion_Click);
             // 
             // groupBox1
             // 
