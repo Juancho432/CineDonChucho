@@ -63,7 +63,7 @@ namespace CapaPresentacion
                 comboBox_genero_buscado.Text = result.Genero;
                 txt_precioBoleta_buscado.Text = result.Precio.ToString();
                 timepicker_fecha_buscado.Value = result.Fecha.Date;
-                timepicker_hora_buscado.Value = result.Fecha;
+                timepicker_hora_buscado.Value = result.Fecha.Date;
             }
         }
 
