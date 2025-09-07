@@ -25,7 +25,8 @@ namespace CapaNegocio
 
         public void RegistrarPelicula(Pelicula pelicula)
         {
-            objCDPelicula.InsertarPelicula(pelicula.Nombre, (int)pelicula.Duracion, pelicula.Genero);
+            objCDPelicula.InsertarPelicula(pelicula.Nombre, (int)pelicula.Duracion, 
+                pelicula.Genero, pelicula.Precio);
         }
     
         public DataTable ListarPeliculas()
@@ -33,10 +34,12 @@ namespace CapaNegocio
             return objCDPelicula.ListarPeliculas();
         }
     
-        public void ActualizarPelicula(string codigo, string nombre, string duracion, string genero)
+        public void ActualizarPelicula(string codigo, string nombre, string duracion, 
+            string genero, string precio)
         {
             objCDPelicula.ActualizarPelicula(int.Parse(codigo), nombre, 
-                                             int.Parse(duracion), genero);
+                                             int.Parse(duracion), genero,
+                                             decimal.Parse(precio));
         }
     }
 
@@ -46,5 +49,6 @@ namespace CapaNegocio
         public string Nombre;
         public uint Duracion;
         public string Genero;
+        public decimal Precio;
     }
 }
