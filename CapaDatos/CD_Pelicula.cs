@@ -1,48 +1,50 @@
 ﻿
+using System;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Configuration;
 
 namespace CapaDatos
 {
     public class CD_Pelicula
     {
-        // Indicar la cadena de conexión
         private static readonly string cadena =
             ConfigurationManager.ConnectionStrings["MiConexion"].ConnectionString;
 
         // Insertar Película
-        public void InsertarPelicula(string nombre, int duracion, string genero, decimal precioBoleta)
+        public void InsertarPelicula(string nombre, int duracion, string genero, decimal precioBoleta, DateTime fechaHoraFuncion)
         {
             using (SqlConnection cn = new SqlConnection(cadena))
             {
-                SqlCommand cmd = new SqlCommand("sp_InsertarPelicula", cn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Nombre", nombre);
-                cmd.Parameters.AddWithValue("@Duracion", duracion);
-                cmd.Parameters.AddWithValue("@Genero", genero);
-                cmd.Parameters.AddWithValue("@PrecioBoleta", precioBoleta);
+                SqlCommand comando = new SqlCommand("sp_InsertarPelicula", cn);
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.AddWithValue("@Nombre", nombre);
+                comando.Parameters.AddWithValue("@Duracion", duracion);
+                comando.Parameters.AddWithValue("@Genero", genero);
+                comando.Parameters.AddWithValue("@PrecioBoleta", precioBoleta);
+                comando.Parameters.AddWithValue("@FechaHoraFuncion", fechaHoraFuncion);
 
                 cn.Open();
-                cmd.ExecuteNonQuery();
+                comando.ExecuteNonQuery();
             }
         }
 
         // Actualizar Película
-        public void ActualizarPelicula(int codigo, string nombre, int duracion, string genero, decimal precioBoleta)
+        public void ActualizarPelicula(int codigo, string nombre, int duracion, string genero, decimal precioBoleta, DateTime fechaHoraFuncion)
         {
             using (SqlConnection cn = new SqlConnection(cadena))
             {
-                SqlCommand cmd = new SqlCommand("sp_ActualizarPelicula", cn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Codigo", codigo);
-                cmd.Parameters.AddWithValue("@Nombre", nombre);
-                cmd.Parameters.AddWithValue("@Duracion", duracion);
-                cmd.Parameters.AddWithValue("@Genero", genero);
-                cmd.Parameters.AddWithValue("@PrecioBoleta", precioBoleta);
+                SqlCommand comando = new SqlCommand("sp_ActualizarPelicula", cn);
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.AddWithValue("@Codigo", codigo);
+                comando.Parameters.AddWithValue("@Nombre", nombre);
+                comando.Parameters.AddWithValue("@Duracion", duracion);
+                comando.Parameters.AddWithValue("@Genero", genero);
+                comando.Parameters.AddWithValue("@PrecioBoleta", precioBoleta);
+                comando.Parameters.AddWithValue("@FechaHoraFuncion", fechaHoraFuncion);
 
                 cn.Open();
-                cmd.ExecuteNonQuery();
+                comando.ExecuteNonQuery();
             }
         }
 
@@ -60,7 +62,7 @@ namespace CapaDatos
             }
         }
 
-        // Buscar Película por Código
+        // Buscar Película
         public DataRow BuscarPelicula(int codigo)
         {
             DataTable dt = new DataTable();

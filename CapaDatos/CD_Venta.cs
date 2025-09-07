@@ -8,34 +8,29 @@ namespace CapaDatos
 {
     public class CD_Venta
     {
-        //Indicar la cadena de conexion
         private static readonly string cadena =
             ConfigurationManager.ConnectionStrings["MiConexion"].ConnectionString;
 
         // Insertar Venta
-        public void InsertarVenta(int codigoPelicula, int cantidadBoletas, decimal? valorUnitario = null, TimeSpan? horaFuncion = null)
+        public void InsertarVenta(int codigoPelicula, int cantidadBoletas, decimal valorUnitario, TimeSpan? horaFuncion = null)
         {
             using (SqlConnection cn = new SqlConnection(cadena))
             {
-                SqlCommand cmd = new SqlCommand("sp_InsertarVenta", cn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@CodigoPelicula", codigoPelicula);
-                cmd.Parameters.AddWithValue("@CantidadBoletas", cantidadBoletas);
-
-                if (valorUnitario.HasValue)
-                    cmd.Parameters.AddWithValue("@ValorUnitario", valorUnitario.Value);
-                else
-                    cmd.Parameters.AddWithValue("@ValorUnitario", DBNull.Value);
+                SqlCommand comando = new SqlCommand("sp_InsertarVenta", cn);
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.AddWithValue("@CodigoPelicula", codigoPelicula);
+                comando.Parameters.AddWithValue("@CantidadBoletas", cantidadBoletas);
+                comando.Parameters.AddWithValue("@ValorUnitario", valorUnitario);
 
                 if (horaFuncion.HasValue)
-                    cmd.Parameters.AddWithValue("@HoraFuncion", horaFuncion.Value);
+                    comando.Parameters.AddWithValue("@HoraFuncion", horaFuncion.Value);
                 else
-                    cmd.Parameters.AddWithValue("@HoraFuncion", DBNull.Value);
+                    comando.Parameters.AddWithValue("@HoraFuncion", DBNull.Value);
 
                 cn.Open();
-                cmd.ExecuteNonQuery();
+                comando.ExecuteNonQuery();
             }
-        }//metodo
+        }
 
         // Listar Ventas
         public DataTable ListarVentas()
@@ -50,7 +45,6 @@ namespace CapaDatos
                 da.Fill(dt);
             }
             return dt;
-        }//metodo
-
+        }
     }//clase
 }
