@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CD_Funcion.cs" />
     <Compile Include="CD_Pelicula.cs" />
     <Compile Include="CD_Venta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

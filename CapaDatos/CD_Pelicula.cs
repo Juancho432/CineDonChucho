@@ -7,7 +7,7 @@ namespace CapaDatos
 {
     public class CD_Pelicula
     {
-        //Indicar la cadena de conexion
+        // Indicar la cadena de conexión
         private static readonly string cadena =
             ConfigurationManager.ConnectionStrings["MiConexion"].ConnectionString;
 
@@ -25,8 +25,7 @@ namespace CapaDatos
                 cn.Open();
                 comando.ExecuteNonQuery();
             }
-        } //metodo
-
+        }
 
         // Actualizar Película
         public void ActualizarPelicula(int codigo, string nombre, int duracion, string genero)
@@ -43,7 +42,7 @@ namespace CapaDatos
                 cn.Open();
                 comando.ExecuteNonQuery();
             }
-        }//metodo
+        }
 
         // Eliminar Película
         public void EliminarPelicula(int codigo)
@@ -57,8 +56,7 @@ namespace CapaDatos
                 cn.Open();
                 comando.ExecuteNonQuery();
             }
-        }//metodo
-
+        }
 
         // Buscar Película por Código
         public DataRow BuscarPelicula(int codigo)
@@ -75,7 +73,7 @@ namespace CapaDatos
             }
 
             return (dt.Rows.Count > 0) ? dt.Rows[0] : null;
-        }//metodo
+        }
 
         // Listar Películas
         public DataTable ListarPeliculas()
@@ -90,7 +88,6 @@ namespace CapaDatos
                 da.Fill(dt);
             }
             return dt;
-        }//metodo
-
+        }
     }//clase
 }
