@@ -29,7 +29,8 @@ namespace CapaPresentacion
                         Nombre = txt_nombre.Text,
                         Duracion = uint.Parse(txt_duracion.Text),
                         Genero = cb_genero.Text,
-                        Precio = decimal.Parse(txt_precioBoleta.Text)
+                        Precio = decimal.Parse(txt_precioBoleta.Text),
+                        Fecha = datepicker_fecha.Value.Add(timepicker_horaFuncion.Value.TimeOfDay)
                     }
             );
 
@@ -87,8 +88,8 @@ namespace CapaPresentacion
             if (checkBox_editar.Checked == true)
             {
                 objCN.ActualizarPelicula(txt_busqueda.Text, txt_nombre_buscado.Text,
-                                         txt_duracion_buscada.Text, comboBox_genero_buscado.Text,
-                                         txt_precioBoleta_buscado.Text);
+                    txt_duracion_buscada.Text, comboBox_genero_buscado.Text, txt_precioBoleta_buscado.Text,
+                    timepicker_fecha_buscado.Value.Add(timepicker_hora_buscado.Value.TimeOfDay));
             }
             else
             {
